@@ -1,1 +1,0 @@
-import{_ as r,t as s,x as e,B as t,v as o}from"./R-4pnbvt.js";const a={},c={class:"container"};function l(_,n){return o(),s("div",c,n[0]||(n[0]=[e("h1",null,[e("ruby",null,[t("なるほど"),e("rt",null,"じっかん")]),t("実感サイエンスミュージアム ")],-1),t(" ここでは、科学の面白さを実感できる実験を行っています。 ")]))}const i=r(a,[["render",l]]);export{i as default};

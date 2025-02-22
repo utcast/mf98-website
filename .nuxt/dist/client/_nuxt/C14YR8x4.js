@@ -1,1 +1,0 @@
-import{_ as t,t as s,x as n,B as o,v as r}from"./R-4pnbvt.js";const a={},c={class:"container"};function _(d,e){return r(),s("div",c,e[0]||(e[0]=[n("h1",null," なるほど体感サイエンスショー ",-1),o(" ここでは、東大CASTの活動を紹介しています。 ")]))}const l=t(a,[["render",_]]);export{l as default};

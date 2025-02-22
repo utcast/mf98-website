@@ -1,1 +1,0 @@
-{"file":"index-Cbe-rAW4.js","mappings":";;;;;;;;;;;;;;;AAAA,SAAA,eAAA,MAAA,OAAA,SACc;;;;;;;;;;","names":[],"sources":["../../../../pages/show/index.vue"],"sourcesContent":["<template>\n    <div class=\"container\">\n        <h1>\n        なるほど体感サイエンスショー\n        </h1>\n        ここでは、東大CASTの活動を紹介しています。\n    </div>\n</template>"],"version":3}

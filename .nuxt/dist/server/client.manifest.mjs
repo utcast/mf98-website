@@ -1,1 +1,0 @@
-export { default } from "file:///Users/nagashimafumiya/Documents/%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB/CAST/clone%E5%BE%8CMF98web/mf98-website/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

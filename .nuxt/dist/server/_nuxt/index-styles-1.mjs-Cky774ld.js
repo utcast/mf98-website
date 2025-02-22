@@ -1,5 +1,0 @@
-const index_vue_vue_type_style_index_0_scoped_a7dcdca2_lang = ".container[data-v-a7dcdca2]{align-items:center;background-color:#f0f0f0;display:flex;flex-direction:column;padding:1rem}h1[data-v-a7dcdca2]{font-size:1rem;margin-bottom:1rem;text-align:center}h1 ruby rt[data-v-a7dcdca2]{color:gray;font-size:.5rem}.text-lg[data-v-a7dcdca2]{font-size:1.125rem;text-align:center}@media (min-width:768px){.md_text-3xl[data-v-a7dcdca2]{font-size:1.875rem}}.my-1[data-v-a7dcdca2]{margin-bottom:.25rem;margin-top:.25rem}.text-sm[data-v-a7dcdca2]{font-size:.875rem}@media (min-width:768px){.md_text-base[data-v-a7dcdca2]{font-size:1rem}}.text-xs[data-v-a7dcdca2]{font-size:.75rem}.bg-red-600[data-v-a7dcdca2]{background-color:#e3342f}.bg-blue-600[data-v-a7dcdca2]{background-color:#3490dc}.text-white[data-v-a7dcdca2]{color:#fff}.mx-2[data-v-a7dcdca2]{margin-left:.5rem;margin-right:.5rem}.p-1[data-v-a7dcdca2]{padding:.25rem}.rounded[data-v-a7dcdca2]{border-radius:.25rem}";
-export {
-  index_vue_vue_type_style_index_0_scoped_a7dcdca2_lang as default
-};
-//# sourceMappingURL=index-styles-1.mjs-Cky774ld.js.map
