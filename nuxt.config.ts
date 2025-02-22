@@ -23,3 +23,7 @@ export default defineNuxtConfig({
     preset: 'static', // 静的サイト生成を有効化
   }
 })
+function defineNuxtConfig(config: { compatibilityDate: string; devtools: { enabled: boolean; }; app: { baseURL: any; head: { titleTemplate: string; meta: ({ charset: string; } | { name: string; content: string; } | { hid: string; property: string; content: string; })[]; link: { rel: string; type: string; href: string; }[]; }; }; nitro: { preset: string; }; }) {
+  return config;
+}
+
