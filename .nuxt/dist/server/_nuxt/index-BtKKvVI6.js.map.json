@@ -1,0 +1,1 @@
+{"file":"index-BtKKvVI6.js","mappings":";;;;;;;;;;;;;;;AAAA,SAAA,eAAA,MAAA,OAAA,SACc;;;;;;;;;;","names":[],"sources":["../../../../pages/museum/index.vue"],"sourcesContent":["<template>\n    <div class=\"container\">\n        <h1>\n        <ruby>なるほど<rt>じっかん</rt></ruby>実感サイエンスミュージアム\n        </h1>\n        ここでは、科学の面白さを実感できる実験を行っています。\n    </div>\n</template>"],"version":3}

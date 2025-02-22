@@ -1,0 +1,1 @@
+import{_ as r,t as s,x as e,B as t,v as l}from"./R-4pnbvt.js";const o={},a={class:"container"};function c(u,n){return l(),s("div",a,n[0]||(n[0]=[e("h1",null,[e("ruby",null,[t("作"),e("rt",null,"つく")]),t("って"),e("ruby",null,[t("体感"),e("rt",null,"たいかん")]),t("サイエンスアトリエ ")],-1),t(" ここでは、子どもたちが自分で実験を行い、科学の面白さを体感できるアトリエを開催しています。 ")]))}const d=r(o,[["render",c]]);export{d as default};
