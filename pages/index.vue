@@ -40,7 +40,7 @@ export default {
   background-color: #f0f0f0; /* グレーの背景色 */
 }
 
-h1 {
+/* h1 {
   font-size: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -54,7 +54,7 @@ h1 ruby rt {
 .text-lg {
   font-size: 1.125rem;
   text-align: center;
-}
+} */
 
 @media (min-width: 768px) {
   .md_text-3xl {
@@ -62,7 +62,7 @@ h1 ruby rt {
   }
 }
 
-.my-1 {
+/* .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
@@ -104,5 +104,5 @@ h1 ruby rt {
 
 .rounded {
   border-radius: 0.25rem;
-}
+} */
 </style>

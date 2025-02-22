@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
+
   app: {
     baseURL: process.env.NUXT_BASE_URL || "/",    
     head: {
@@ -19,11 +20,18 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://ut-cast.net/favicon.ico' }]
     }
   },
+
+  // Tailwind CSS の設定を追加
+  modules: ['@nuxtjs/tailwindcss'],
+  css: ['~/assets/css/tailwind.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   nitro: {
     preset: 'static', // 静的サイト生成を有効化
   }
 })
-function defineNuxtConfig(config: { compatibilityDate: string; devtools: { enabled: boolean; }; app: { baseURL: any; head: { titleTemplate: string; meta: ({ charset: string; } | { name: string; content: string; } | { hid: string; property: string; content: string; })[]; link: { rel: string; type: string; href: string; }[]; }; }; nitro: { preset: string; }; }) {
-  return config;
-}
-
