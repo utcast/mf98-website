@@ -1,0 +1,1 @@
+import{_ as o,c as r,a as e,d as t,o as s}from"./BNf3SRfM.js";const a={},c={class:"container"};function l(d,n){return s(),r("div",c,n[0]||(n[0]=[e("h1",null,[e("ruby",null,[t("なるほど"),e("rt",null,"じっかん")]),t("実感サイエンスミュージアム ")],-1),t(" ここでは、科学の面白さを実感できる実験を行っています。 ")]))}const i=o(a,[["render",l]]);export{i as default};
