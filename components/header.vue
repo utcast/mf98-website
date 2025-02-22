@@ -39,19 +39,19 @@ const toggleMenu = () => {
     </div>
     <nav :class="{ open: menuOpen }">
       <ul>
-        <li><a href="/">ホーム</a></li>
-        <li><a href="/museum">ミュージアム</a></li>
-        <li><a href="/show">ショー</a></li>
-        <li><a href="/atelier">アトリエ</a></li>
-        <li><a href="/time">タイムスケジュール</a></li>
+        <li><nuxt-link to="/">ホーム</nuxt-link></li>
+        <li><nuxt-link to="/museum">ミュージアム</nuxt-link></li>
+        <li><nuxt-link to="/show">ショー</nuxt-link></li>
+        <li><nuxt-link to="/atelier">アトリエ</nuxt-link></li>
+        <li><nuxt-link to="/time">タイムスケジュール</nuxt-link></li>
       </ul>
     </nav>
     <div class="nav-links">
-      <span><a href="/">ホーム</a></span>
-      <span><a href="/museum">ミュージアム</a></span>
-      <span><a href="/show">ショー</a></span>
-      <span><a href="/atelier">アトリエ</a></span>
-      <span><a href="/time">タイムスケジュール</a></span>
+      <span><nuxt-link to="/">ホーム</nuxt-link></span>
+      <span><nuxt-link to="/museum">ミュージアム</nuxt-link></span>
+      <span><nuxt-link to="/show">ショー</nuxt-link></span>
+      <span><nuxt-link to="/atelier">アトリエ</nuxt-link></span>
+      <span><nuxt-link to="/time">タイムスケジュール</nuxt-link></span>
     </div>
   </header>
 </template>
