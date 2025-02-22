@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   app: {
-    baseURL: process.env.NUXT_PUBLIC_BASE || (process.env.NODE_ENV === 'production' ? '/REPO_NAME/' : '/'),    
+    baseURL: process.env.NUXT_PUBLIC_BASE || (process.env.NODE_ENV === 'production' ? '/mf98-website/' : '/'),    
     head: {
       titleTemplate: '%s - 東大CAST五月祭2025特設ページ',
       meta: [
