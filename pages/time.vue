@@ -1,3 +1,4 @@
 <template>
-    <h1>タイムスケジュール</h1>
+    <h1 class = "md_text-3xl"> 
+    タイムスケジュール</h1>
 </template>

@@ -27,7 +27,7 @@ library.add(faCaretRight)
 export default {
   components: {
     'font-awesome-icon': FontAwesomeIcon
-  }
+  }//これ多分configの中に書いた方がいい
 }
 </script>
 
@@ -37,7 +37,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #f0f0f0; /* グレーの背景色 */
+  background-color: #f0f0f0; 
 }
 
 /* h1 {
