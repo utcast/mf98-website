@@ -1,1 +1,0 @@
-import{_ as t,c as o,a as s,d as n,o as a}from"./7lVrGpg3.js";const c={},r={class:"container"};function d(_,e){return a(),o("div",r,e[0]||(e[0]=[s("h1",null," なるほど体感サイエンスショー ",-1),n(" ここでは、東大CASTの活動を紹介しています。 ")]))}const l=t(c,[["render",d]]);export{l as default};
