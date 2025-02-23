@@ -1,1 +1,0 @@
-import{_ as r,c as o,a as e,d as n,o as s}from"./Dv2tr2Gk.js";const l={},a={class:"container"};function c(u,t){return s(),o("div",a,t[0]||(t[0]=[e("h1",null,[e("ruby",null,[n("作"),e("rt",null,"つく")]),n("って"),e("ruby",null,[n("体感"),e("rt",null,"たいかん")]),n("サイエンスアトリエ ")],-1),n(" ここでは、子どもたちが自分で実験を行い、科学の面白さを体感できるアトリエを開催しています。 ")]))}const _=r(l,[["render",c]]);export{_ as default};
