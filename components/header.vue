@@ -23,36 +23,31 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header>
-    <div class="header-content">
-      <div class="title"> <ruby>東大 <rt>とうだい</rt></ruby> <ruby>CAST <rt>きゃすと</rt></ruby> <ruby>五月祭 <rt>ごがつさい</rt></ruby>2025</div>
-      <div class="toggle-buttons">
-        <div class="label">ふりがな</div>
-        <div class="toggle-button" :class="{ active: rubyVisible }" @click="toggleFurigana(true)">あり</div>
-        <div class="toggle-button" :class="{ active: !rubyVisible }" @click="toggleFurigana(false)">なし</div>
+  <header class="flex flex-col items-center p-4 bg-blue-600 w-full">
+    <div class="flex justify-between items-center w-full max-w-5xl">
+      <div class="text-white text-lg text-center flex-grow">
+        <ruby>東大 <rt>とうだい</rt></ruby> <ruby>CAST <rt>きゃすと</rt></ruby> <ruby>五月祭 <rt>ごがつさい</rt></ruby>2025
       </div>
-      <div class="menu-icon" @click="toggleMenu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="flex flex-col items-center gap-1">
+        <div class="text-white text-xs">ふりがな</div>
+        <div class="py-1 px-2 rounded cursor-pointer bg-blue-700 text-white" :class="{ 'bg-white text-blue-700': rubyVisible }" @click="toggleFurigana(true)">あり</div>
+        <div class="py-1 px-2 rounded cursor-pointer bg-blue-700 text-white" :class="{ 'bg-white text-blue-700': !rubyVisible }" @click="toggleFurigana(false)">なし</div>
+      </div>
+      <div class="flex flex-col cursor-pointer md:hidden" @click="toggleMenu">
+        <span class="bg-white h-0.5 w-6 my-1"></span>
+        <span class="bg-white h-0.5 w-6 my-1"></span>
+        <span class="bg-white h-0.5 w-6 my-1"></span>
       </div>
     </div>
-    <nav :class="{ open: menuOpen }">
-      <ul>
-        <li><nuxt-link to="/">ホーム</nuxt-link></li>
-        <li><nuxt-link to="/museum">ミュージアム</nuxt-link></li>
-        <li><nuxt-link to="/show">ショー</nuxt-link></li>
-        <li><nuxt-link to="/atelier">アトリエ</nuxt-link></li>
-        <li><nuxt-link to="/time">タイムスケジュール</nuxt-link></li>
+    <nav :class="{ 'max-h-0': !menuOpen, 'max-h-96': menuOpen }" class="flex-col items-center w-full bg-blue-600 transition-all duration-500 ease-in-out overflow-hidden md:flex md:flex-row md:justify-center md:max-h-full">
+      <ul class="flex flex-col md:flex-row list-none p-0">
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/" class="text-white no-underline">ホーム</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/museum" class="text-white no-underline">ミュージアム</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/show" class="text-white no-underline">ショー</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/atelier" class="text-white no-underline">アトリエ</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/time" class="text-white no-underline">タイムスケジュール</nuxt-link></li>
       </ul>
     </nav>
-    <div class="nav-links">
-      <span><nuxt-link to="/">ホーム</nuxt-link></span>
-      <span><nuxt-link to="/museum">ミュージアム</nuxt-link></span>
-      <span><nuxt-link to="/show">ショー</nuxt-link></span>
-      <span><nuxt-link to="/atelier">アトリエ</nuxt-link></span>
-      <span><nuxt-link to="/time">タイムスケジュール</nuxt-link></span>
-    </div>
   </header>
 </template>
 
@@ -64,139 +59,13 @@ html, body {
   height: 100%;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  background-color: #3490dc; /* ボタンの色として使用している青 */
-  width: 100%;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.title {
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
-  flex-grow: 1;
-}
-
-.toggle-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.label {
-  color: white;
-  font-size: 0.7rem;
-}
-
-.toggle-button {
-  padding: 0.25rem 0.5rem; /* ボタンの大きさを半分にする */
-  border-radius: 0.25rem;
-  cursor: pointer;
-  background-color: #2779bd;
-  color: white;
-}
-
-.toggle-button.active {
-  background-color: white;
-  color: #2779bd;
-}
-
-.toggle-button:hover {
-  opacity: 0.8;
-}
-
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  background: white;
-  height: 2px;
-  width: 25px;
-  margin: 4px;
-}
-
-nav {
-  display: none;
-  justify-content: center;
-  width: 100%;
-  background-color: #3490dc;
-  transition: max-height 0.5s ease-in-out; /* アニメーションの速度を調整 */
-  overflow: hidden;
-  max-height: 0;
-}
-
-nav.open {
-  display: flex;
-  max-height: 500px; /* メニューの最大高さを設定 */
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.nav-links span a {
-  color: white;
-  text-decoration: none;
-}
-
 @media (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
-
   nav {
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    max-height: 0;
   }
 
-  nav.open {
-    display: flex;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 1rem 0;
-  }
-
-  .nav-links {
-    display: none;
+  nav.flex {
+    max-height: 500px; /* メニューの最大高さを設定 */
   }
 }
 </style>
