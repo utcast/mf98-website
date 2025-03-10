@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Header from '~/components/header.vue'
+imp~/components/layout/kyosan.vueonents/header.vue'
 import Kyosan from '~/components/kyosan.vue' // kyosan.vue をインポート
 import Footer from '~/components/footer.vue'
 
