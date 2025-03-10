@@ -45,7 +45,8 @@ const toggleMenu = () => {
         <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/museum" class="text-white no-underline">ミュージアム</nuxt-link></li>
         <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/show" class="text-white no-underline">ショー</nuxt-link></li>
         <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/atelier" class="text-white no-underline">アトリエ</nuxt-link></li>
-        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/time" class="text-white no-underline">タイムスケジュール</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/schedule" class="text-white no-underline">タイムスケジュール</nuxt-link></li>
+        <li class="my-2 md:my-0 md:mx-4"><nuxt-link to="/access" class="text-white no-underline">アクセス</nuxt-link></li>
       </ul>
     </nav>
   </header>
