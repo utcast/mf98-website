@@ -22,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   // Tailwind CSS の設定を追加
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@sidebase/nuxt-auth'],
   css: ['~/assets/css/tailwind.css'],
   postcss: {
     plugins: {
