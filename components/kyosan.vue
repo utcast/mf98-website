@@ -4,18 +4,18 @@ import { ref } from 'vue'
 const sponsors = ref([
   {
     name: '企業A',
-    image: 'path/to/imageA.jpg',
-    link: 'https://www.companyA.com'
+    image:  new URL('~/assets/img/atelier/atelier.png', import.meta.url).href,
+    link: 'https://ut-cast.net'
   },
   {
     name: '企業B',
-    image: 'path/to/imageB.jpg',
-    link: 'https://www.companyB.com'
+    image: new URL('~/assets/img/atelier/atelier.png', import.meta.url).href,
+    link: 'https://ut-cast.net'
   },
   {
     name: '企業C',
-    image: 'path/to/imageC.jpg',
-    link: 'https://www.companyC.com'
+    image: new URL('~/assets/img/atelier/atelier.png', import.meta.url).href,
+    link: 'https://ut-cast.net'
   }
   // 他の企業データもここに追加
 ])
