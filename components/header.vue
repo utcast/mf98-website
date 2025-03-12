@@ -30,7 +30,7 @@ const toggleMenu = () => {
       <nuxt-link to="/" class="flex items-center">
         <img src="~/assets/img/CASTロゴ_透過.png" alt="CASTロゴ" class="h-12 mr-4">
       </nuxt-link>
-      <div class="title text-white text-lg text-center flex-grow"> 
+      <div class="title text-white text-lg flex-grow text-left"> 
         <ruby>東大 <rt>とうだい</rt></ruby> 
         <ruby>CAST <rt>きゃすと</rt></ruby> 
         <ruby>五月祭 <rt>ごがつさい</rt></ruby>2025
@@ -50,23 +50,83 @@ const toggleMenu = () => {
     <!-- ハンバーガーメニューのナビゲーション -->
     <nav :class="{ 'hidden': !menuOpen, 'block': menuOpen }" class="w-full bg-blue-600 transition-all duration-300 ease-in-out md:hidden">
       <ul class="flex flex-col items-center py-4">
-        <li class="my-2"><nuxt-link to="/" class="text-white no-underline">ホーム</nuxt-link></li>
-        <li class="my-2"><nuxt-link to="/museum" class="text-white no-underline">ミュージアム</nuxt-link></li>
-        <li class="my-2"><nuxt-link to="/show" class="text-white no-underline">ショー</nuxt-link></li>
-        <li class="my-2"><nuxt-link to="/atelier" class="text-white no-underline">アトリエ</nuxt-link></li>
-        <li class="my-2"><nuxt-link to="/schedule" class="text-white no-underline">スケジュール</nuxt-link></li>
-        <li class="my-2"><nuxt-link to="/access" class="text-white no-underline">アクセス</nuxt-link></li>
+        <li class="my-2">
+          <nuxt-link to="/" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">home</span>
+            ホーム
+          </nuxt-link>
+        </li>
+        <li class="my-2">
+          <nuxt-link to="/museum" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">school</span>
+            ミュージアム
+          </nuxt-link>
+        </li>
+        <li class="my-2">
+          <nuxt-link to="/show" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">festival</span>
+            ショー
+          </nuxt-link>
+        </li>
+        <li class="my-2">
+          <nuxt-link to="/atelier" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">palette</span>
+            アトリエ
+          </nuxt-link>
+        </li>
+        <li class="my-2">
+          <nuxt-link to="/schedule" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">calendar_today</span>
+            スケジュール
+          </nuxt-link>
+        </li>
+        <li class="my-2">
+          <nuxt-link to="/access" class="text-white no-underline flex items-center">
+            <span class="material-symbols-outlined">near_me</span>
+            アクセス
+          </nuxt-link>
+        </li>
       </ul>
     </nav>
 
     <!-- デスクトップ用のナビゲーション -->
     <div class="nav-links hidden md:flex justify-center gap-4 mt-4">
-      <span><nuxt-link to="/" class="text-white no-underline">ホーム</nuxt-link></span>
-      <span><nuxt-link to="/museum" class="text-white no-underline">ミュージアム</nuxt-link></span>
-      <span><nuxt-link to="/show" class="text-white no-underline">ショー</nuxt-link></span>
-      <span><nuxt-link to="/atelier" class="text-white no-underline">アトリエ</nuxt-link></span>
-      <span><nuxt-link to="/schedule" class="text-white no-underline">スケジュール</nuxt-link></span>
-      <span><nuxt-link to="/access" class="text-white no-underline">アクセス</nuxt-link></span>
+      <span>
+        <nuxt-link to="/" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">home</span>
+          ホーム
+        </nuxt-link>
+      </span>
+      <span>
+        <nuxt-link to="/museum" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">school</span>
+          ミュージアム
+        </nuxt-link>
+      </span>
+      <span>
+        <nuxt-link to="/show" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">festival</span>
+          ショー
+        </nuxt-link>
+      </span>
+      <span>
+        <nuxt-link to="/atelier" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">palette</span>
+          アトリエ
+        </nuxt-link>
+      </span>
+      <span>
+        <nuxt-link to="/schedule" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">calendar_today</span>
+          スケジュール
+        </nuxt-link>
+      </span>
+      <span>
+        <nuxt-link to="/access" class="text-white no-underline flex items-center">
+          <span class="material-symbols-outlined">near_me</span>
+          アクセス
+        </nuxt-link>
+      </span>
     </div>
   </header>
 </template>
