@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 const rubyVisible = ref(true)
 const menuOpen = ref(false)
+const router = useRouter()
 
 const toggleFurigana = () => {
   rubyVisible.value = !rubyVisible.value
@@ -25,6 +27,9 @@ const toggleMenu = () => {
 <template>
   <header class="flex flex-col items-center p-4 bg-blue-600 w-full">
     <div class="header-content flex justify-between items-center w-full max-w-screen-xl">
+      <nuxt-link to="/" class="flex items-center">
+        <img src="~/assets/img/CASTロゴ_透過.png" alt="CASTロゴ" class="h-12 mr-4">
+      </nuxt-link>
       <div class="title text-white text-lg text-center flex-grow"> 
         <ruby>東大 <rt>とうだい</rt></ruby> 
         <ruby>CAST <rt>きゃすと</rt></ruby> 
@@ -60,8 +65,8 @@ const toggleMenu = () => {
       <span><nuxt-link to="/museum" class="text-white no-underline">ミュージアム</nuxt-link></span>
       <span><nuxt-link to="/show" class="text-white no-underline">ショー</nuxt-link></span>
       <span><nuxt-link to="/atelier" class="text-white no-underline">アトリエ</nuxt-link></span>
-      <li class="my-2"><nuxt-link to="/schedule" class="text-white no-underline">スケジュール</nuxt-link></li>
-      <li class="my-2"><nuxt-link to="/access" class="text-white no-underline">アクセス</nuxt-link></li>
+      <span><nuxt-link to="/schedule" class="text-white no-underline">スケジュール</nuxt-link></span>
+      <span><nuxt-link to="/access" class="text-white no-underline">アクセス</nuxt-link></span>
     </div>
   </header>
 </template>

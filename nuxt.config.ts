@@ -23,7 +23,9 @@ export default defineNuxtConfig({
 
   // Tailwind CSS の設定を追加
   modules: ['@nuxtjs/tailwindcss'],
-  css: ['~/assets/css/tailwind.css'],
+  css: ['~/assets/css/tailwind.css',
+        '@/assets/css/global.css'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
