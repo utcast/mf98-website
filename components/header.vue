@@ -25,7 +25,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <header class="flex flex-col items-center p-4 bg-blue-600 w-full">
+  <header class="flex flex-col items-center p-4" style="background-color: #0168B7; width: 100%;">
     <div class="header-content flex justify-between items-center w-full max-w-screen-xl">
       <nuxt-link to="/" class="flex items-center">
         <img src="~/assets/img/CASTロゴ_透過.png" alt="CASTロゴ" class="h-12 mr-4">
@@ -48,7 +48,7 @@ const toggleMenu = () => {
     </div>
 
     <!-- ハンバーガーメニューのナビゲーション -->
-    <nav :class="{ 'hidden': !menuOpen, 'block': menuOpen }" class="w-full bg-blue-600 transition-all duration-300 ease-in-out md:hidden">
+    <nav :class="{ 'hidden': !menuOpen, 'block': menuOpen }" class="w-full transition-all duration-300 ease-in-out md:hidden" style="background-color: #0168B7;">
       <ul class="flex flex-col items-center py-4">
         <li class="my-2">
           <nuxt-link to="/" class="text-white no-underline flex items-center">
