@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-100 p-4">
+  <footer style="background-color: #0168B7; width: 100%;">
     <div class="flex flex-col items-center md:flex-row md:justify-center">
       <nuxt-link to="/" class="text-blue-600 mb-2 md:mb-0 md:mx-4">トップページ</nuxt-link>
       <a href="https://gogatsusai.jp/98/visitor/" target="_blank" class="text-blue-600 mb-2 md:mb-0 md:mx-4">五月祭公式サイト</a>
