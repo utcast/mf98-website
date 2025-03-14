@@ -1,1 +1,0 @@
-import{_ as o,c as r,a as t,d as e,o as s}from"./BLkFycS1.js";const a={},c={class:"container"};function l(d,n){return s(),r("div",c,n[0]||(n[0]=[t("h1",null,[e(" なるほど"),t("ruby",null,[e("実感"),t("rt",null,"じっかん")]),e("サイエンスミュージアム ")],-1),e(" ここでは、科学の面白さを実感できる実験を行っています。 ")]))}const i=o(a,[["render",l]]);export{i as default};
