@@ -22,11 +22,16 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: .env.gh-pages を読み込む
+        run: cp .env.gh-pages .env
+
       - name: 依存関係をインストール
         run: npm ci
 
       - name: Nuxt.js をビルド
         run: npm run generate
+        env:
+          NUXT_BASE_URL: "/mf98-website/"
 
       - name: GitHub Pages にデプロイ
         uses: peaceiris/actions-gh-pages@v3
