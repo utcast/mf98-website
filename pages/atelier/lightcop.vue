@@ -11,7 +11,7 @@
 import { useAtelierStore } from '~/stores/atelierStore';
 import Card from '~/components/card.vue';
 
-const atlierStore = useAtlierStore();
+const atlierStore = useAtelierStore();
 const cards = atlierStore.cards;
 </script>
 

@@ -11,7 +11,7 @@
 import { useShowStore } from '~/stores/showStore';
 import Card from '~/components/card.vue';
 
-const showStore = useShoweStore();
+const showStore = useShowStore();
 const cards = showStore.cards;
 </script>
 
