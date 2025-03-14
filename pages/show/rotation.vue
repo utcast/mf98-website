@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>box</h1>
+    <h1>rotation</h1>
     <div class="card-container">
       <Card v-for="(card, index) in cards" :key="index" :title="card.title" :content="card.content" />
     </div>
@@ -8,11 +8,11 @@
 </template>
 
 <script setup>
-import { useLiveStore } from '~/stores/showStore';
+import { useShowStore } from '~/stores/showStore';
 import Card from '~/components/card.vue';
 
-const liveStore = useLiveStore();
-const cards = liveStore.cards;
+const showStore = useShoweStore();
+const cards = showStore.cards;
 </script>
 
 <style scoped>

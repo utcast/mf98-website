@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const useAtelierStore = defineStore('show', {
+export const useShowStore = defineStore('show', {
   state: () => ({
     cards: [
       { title: 'Card 1', content: 'Content for Card 1' },

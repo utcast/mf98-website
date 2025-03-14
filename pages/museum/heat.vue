@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>box</h1>
+    <h1>heat</h1>
     <div class="card-container">
       <Card v-for="(card, index) in cards" :key="index" :title="card.title" :content="card.content" />
     </div>
@@ -8,11 +8,11 @@
 </template>
 
 <script setup>
-import { useLiveStore } from '~/stores/museumStore';
+import { useMuseumStore } from '~/stores/museumStore';
 import Card from '~/components/card.vue';
 
-const liveStore = useLiveStore();
-const cards = liveStore.cards;
+const museumStore = useMuseumStore();
+const cards = museumStore.cards;
 </script>
 
 <style scoped>

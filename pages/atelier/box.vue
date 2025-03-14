@@ -8,11 +8,11 @@
 </template>
 
 <script setup>
-import { useLiveStore } from '~/stores/atelierStore';
-import Card from '~/components/Card.vue';
+import { useAtelierStore } from '~/stores/atelierStore';
+import Card from '~/components/card.vue';
 
-const liveStore = useLiveStore();
-const cards = liveStore.cards;
+const atlierStore = useAtlierStore();
+const cards = atlierStore.cards;
 </script>
 
 <style scoped>
