@@ -38,5 +38,11 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'static', // 静的サイト生成を有効化
+    publicAssets: [
+      {
+        baseURL: '/public',
+        dir: 'public'
+      }
+    ]
   }
 })
