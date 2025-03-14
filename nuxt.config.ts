@@ -22,7 +22,10 @@ export default defineNuxtConfig({
   },
 
   // Tailwind CSS の設定を追加
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt'
+  ],
   css: ['~/assets/css/tailwind.css',
         '@/assets/css/global.css'
   ],

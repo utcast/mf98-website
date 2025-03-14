@@ -1,11 +1,10 @@
 <template>
-    <div>aa</div>
-  </template>
-  
-  <script>
-  export default {
-    beforeRouteEnter(to, from, next) {
-      next({ name: 'box.vue' });
-    },
-  };
-  </script>
+  <div>Loading...</div>
+</template>
+
+<script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+router.replace({ name: 'museum-heat' });
+</script>
