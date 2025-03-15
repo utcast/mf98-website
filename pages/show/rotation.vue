@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>rotation</h1>
+    <ShowNav />
+    <h1>回転ショー</h1>
     <div class="card-container">
       <Card v-for="(card, index) in cards" :key="index" :title="card.title" :content="card.content" />
     </div>
@@ -10,6 +11,7 @@
 <script setup>
 import { useShowStore } from '~/stores/showStore';
 import Card from '~/components/card.vue';
+import ShowNav from '~/components/showNav.vue';
 
 const showStore = useShowStore();
 const cards = showStore.cards;
