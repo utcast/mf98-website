@@ -5,7 +5,7 @@
       <a href="https://gogatsusai.jp/98/visitor/" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4"><ruby>五月祭公式<rt>ごがつさいこうしき</rt></ruby>サイト</a>
       <a href="https://x.com/ut_cast?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4">Xアカウント</a>
       <a href="https://www.instagram.com/ut_cast/" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4">インスタグラムアカウント</a>
-      <T v="&copy 2025[東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025" class="text-center text-white md:mx-4"></T>
+      <T v="&copy [東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025" class="text-center text-white md:mx-4"></T>
     </div>
   </footer>
 </template>
