@@ -22,8 +22,9 @@ jobs:
           node-version: 18
           cache: 'npm'
 
-      - name: .env.gh-pages を読み込む
-        run: cp .env.gh-pages .env
+      - name: .env を作成
+        run: echo "${{ secrets.ENV_GH_PAGES }}" > .env
+  
 
       - name: 依存関係をインストール
         run: npm ci
