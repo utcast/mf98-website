@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt'
   ],
   css: ['~/assets/css/tailwind.css',
-        '@/assets/css/global.css'
+        '~/assets/css/global.css'
   ],
   postcss: {
     plugins: {
