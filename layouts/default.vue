@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <main>
+  <main class="default-background">
     <slot />
   </main>
   <component :is="kyosanComponent" /> <!-- 動的にコンポーネントを切り替える -->
@@ -32,3 +32,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.default-background {
+  background-color: #D9EFFF;
+  width: 100%;
+  height: 100%;
+}
+</style>

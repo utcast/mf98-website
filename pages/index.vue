@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center" style="background-color:#D9EFFF;width:100%;height:100%;">
+  <div class="flex justify-center" style="width:100%;height:100%;">
     <div class="container flex flex-col items-center justify-center p-4 bg-white shadow-md rounded-lg my-8">
       <h1>
         <T v="[東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025"></T>

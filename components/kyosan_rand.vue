@@ -37,6 +37,8 @@ const selectedSponsor = computed(() => getRandomSponsor())
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #D9EFFF; /* 背景色を追加 */
+  padding: 1rem; /* パディングを追加 */
 }
 
 .sponsor {
