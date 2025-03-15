@@ -3,8 +3,9 @@
     <div class="flex flex-col items-center md:flex-row md:justify-center">
       <nuxt-link to="/" class="text-white mb-2 md:mb-0 md:mx-4">トップページ</nuxt-link>
       <a href="https://gogatsusai.jp/98/visitor/" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4"><ruby>五月祭公式<rt>ごがつさいこうしき</rt></ruby>サイト</a>
-      <a href="https://x.com/ut_cast?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4">Xアカウント</a>
-      <a href="https://www.instagram.com/ut_cast/" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4">インスタグラムアカウント</a>
+      <a href="https://x.com/ut_cast?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4"><ruby>東大CAST公式X<rt>とうだいきゃすとこうしきえっくす</rt></ruby></a>
+      <a href="https://www.instagram.com/ut_cast/" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4"><ruby>東大CAST公式Instagram<rt>とうだいきゃすとこうしきいんすたぐらむ</rt></ruby></a>
+      <a href="https://www.youtube.com/channel/UC6XSE6KzlpREBCT7PliIPnQ" target="_blank" class="text-white mb-2 md:mb-0 md:mx-4"><ruby>東大CAST公式YouTube<rt>とうだいきゃすとこうしきゆーちゅーぶ</rt></ruby></a>
       <T v="&copy [東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025" class="text-center text-white md:mx-4"></T>
     </div>
   </footer>
