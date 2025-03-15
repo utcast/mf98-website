@@ -1,7 +1,7 @@
 <template>
     <div class="museum-nav text-center p-4">
       <h1 class="text-2xl mb-4">
-        <T v="「なるほど[体感](たいかん)！サイエンスショー」"></T>
+        <T v="スケジュール"></T>
       </h1>
       <nav>
         <ul class="list-none p-0">

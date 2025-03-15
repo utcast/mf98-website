@@ -6,7 +6,7 @@
       <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" :img="card.img" />
     </div>
   </div>
-</template>s
+</template>
 
 <script setup>
 import { computed } from 'vue'
