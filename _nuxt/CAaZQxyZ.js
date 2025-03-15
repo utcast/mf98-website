@@ -1,0 +1,1 @@
+import{_ as c,c as n,o as s,a as e,t as a}from"./yCDqQO0_.js";const o={class:"card"},r={__name:"card",props:{title:String,content:String},setup(t){return(l,_)=>(s(),n("div",o,[e("h2",null,a(t.title),1),e("p",null,a(t.content),1)]))}},d=c(r,[["__scopeId","data-v-bcf2fab9"]]);export{d as C};
