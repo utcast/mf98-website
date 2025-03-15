@@ -3,10 +3,10 @@
     <MuseumNav />
     <h1>熱ブース</h1>
     <div class="card-container">
-      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" />
+      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" :img="card.img" />
     </div>
   </div>
-</template>
+</template>s
 
 <script setup>
 import { computed } from 'vue'

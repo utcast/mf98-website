@@ -3,7 +3,7 @@
     <ShowNav />
     <h1>回転ショー</h1>
     <div class="card-container">
-      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" />
+      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" :img="card.img" />
     </div>
   </div>
 </template>
