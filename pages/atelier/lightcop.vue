@@ -1,20 +1,21 @@
 <template>
   <div>
     <AtelierNav />
-    <h1>三原色おっぷ</h1>
+    <h1>三原色コップ</h1>
     <div class="card-container">
-      <Card v-for="(card, index) in cards" :key="index" :title="card.title" :content="card.content" />
+      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" />
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useAtelierStore } from '~/stores/atelierStore';
 import Card from '~/components/card.vue';
 import AtelierNav from '~/components/atelierNav.vue';
 
-const atlierStore = useAtelierStore();
-const cards = atlierStore.cards;
+const atelierStore = useAtelierStore();
+const filteredCards = computed(() => atelierStore.cards.filter(card => card.page === 'lightcop'));
 </script>
 
 <style scoped>

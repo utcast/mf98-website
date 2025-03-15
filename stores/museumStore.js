@@ -3,9 +3,10 @@ import { defineStore } from 'pinia';
 export const useMuseumStore = defineStore('museum', {
   state: () => ({
     cards: [
-      { title: 'Card 1', content: 'Content for Card 1' },
-      { title: 'Card 2', content: 'Content for Card 2' },
-      { title: 'Card 3', content: 'Content for Card 3' },
+      { title: '天然繊維と化学繊維', content: 'ポリマーはモノマーでできています。', page: 'close' },
+      { title: '化学繊維の合成', content: '実際に合成繊維を作っていきます。', page: 'close' },
+      { title: 'ペルチェ効果', content: 'ペルチェ素子を用いて片面を冷やし、片面を温めます。', page: 'heat' },
+      { title: '熱で消えるインク', content: '擦ると消えるあれです。', page: 'pen' },
     ],
   }),
 });

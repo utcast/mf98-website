@@ -1,20 +1,21 @@
 <template>
   <div>
-    <MuswumNav />
+    <MuseumNav />
     <h1>文房具ブース</h1>
     <div class="card-container">
-      <Card v-for="(card, index) in cards" :key="index" :title="card.title" :content="card.content" />
+      <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" />
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { useMuseumStore } from '~/stores/museumStore';
 import Card from '~/components/card.vue';
-import MuswumNav from '~/components/museumNav.vue';
+import MuseumNav from '~/components/museumNav.vue';
 
 const museumStore = useMuseumStore();
-const cards = museumStore.cards;
+const filteredCards = computed(() => museumStore.cards.filter(card => card.page === 'pen'));
 </script>
 
 <style scoped>
