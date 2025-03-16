@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h2><T :v="title" /></h2>
-    <img :src="img" :alt="title" class="card-image" />
+    <img :src="img" :alt="alt" class="card-image" />
     <p><T :v="content" /></p>
   </div>
 </template>
@@ -13,6 +13,7 @@ defineProps({
   title: String,
   content: String,
   img: String,
+  alt: String,
 });
 </script>
 
