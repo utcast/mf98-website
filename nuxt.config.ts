@@ -44,5 +44,14 @@ export default defineNuxtConfig({
         dir: 'public'
       }
     ]
+  },
+
+  // Viteの設定を追加
+  vite: {
+    resolve: {
+      alias: {
+        '@': '/'
+      }
+    }
   }
 })

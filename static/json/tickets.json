@@ -1,0 +1,6 @@
+{
+    "1": { "reserved": 21, "limit": 25 },
+    "2": { "reserved": 25, "limit": 25 },
+    "3": { "reserved": 15, "limit": 25 }
+  }
+  

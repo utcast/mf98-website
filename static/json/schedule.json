@@ -1,0 +1,7 @@
+[
+    { "id": 0, "channel": "show", "day": 1, "kikaku": "kaiten", "startHour": 10, "startMin": 0, "endHour": 10, "endMin": 45 },
+    { "id": 1, "channel": "atelier", "day": 1, "kikaku": "hikari", "startHour": 11, "startMin": 0, "endHour": 11, "endMin": 45 },
+    { "id": 2, "channel": "atelier", "day": 1, "kikaku": "san_gen", "startHour": 13, "startMin": 0, "endHour": 13, "endMin": 45 },
+    { "id": 3, "channel": "atelier", "day": 1, "kikaku": "nenriki", "startHour": 15, "startMin": 0, "endHour": 15, "endMin": 45 }
+  ]
+  
