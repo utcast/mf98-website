@@ -1,12 +1,14 @@
 <template>
   <div class="card">
-    <h2>{{ title }}</h2>
+    <h2><T :v="title" /></h2>
     <img :src="img" :alt="title" class="card-image" />
-    <p>{{ content }}</p>
+    <p><T :v="content" /></p>
   </div>
 </template>
 
 <script setup>
+import T from '~/components/T.vue';
+
 defineProps({
   title: String,
   content: String,
