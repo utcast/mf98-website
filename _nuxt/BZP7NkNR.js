@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as n,a,t as c}from"./D513B6vc.js";const r={class:"card"},i=["src","alt"],l={__name:"card",props:{title:String,content:String,img:String},setup(t){return(o,d)=>(n(),s("div",r,[a("h2",null,c(t.title),1),a("img",{src:t.img,alt:t.title,class:"card-image"},null,8,i),a("p",null,c(t.content),1)]))}},_=e(l,[["__scopeId","data-v-3cc3a874"]]);export{_ as C};
