@@ -9,7 +9,13 @@ import ScheduleModal from '@/components/ScheduleModal.vue'
 const { getKikaku } = useKikaku()
 const { getTicketStatus } = useTickets()
 
-const hours = Array.from({ length: 9 }, (_, i) => i + 9)
+// 基準を8:15に変更
+const START_HOUR = 8
+const START_MIN = 15
+const END_HOUR = 18
+const END_MIN = 15
+
+const hours = Array.from({ length: END_HOUR - START_HOUR + 1 }, (_, i) => i + START_HOUR)
 
 // "nullなkikaku"はフィルターで排除する
 const schedulesWithInfo = computed(() =>
@@ -36,8 +42,9 @@ const filteredSchedules = computed(() => {
 })
 
 const calcPosition = (schedule: ScheduleWithInfo) => {
-  const minutes = (schedule.startHour * 60 + schedule.startMin) - (9 * 60)
-  return minutes
+  const scheduleStartMinutes = schedule.startHour * 60 + schedule.startMin
+  const baselineMinutes = START_HOUR * 60 + START_MIN
+  return scheduleStartMinutes - baselineMinutes // 1分=1px
 }
 
 const calcHeight = (schedule: ScheduleWithInfo) => {
@@ -74,7 +81,14 @@ const openModal = (schedule: ScheduleWithInfo) => {
           class="relative border-l border-gray-300 bg-white"
         >
           <!-- dotted lines -->
-          <div v-for="hour in hours" :key="hour" class="absolute w-full border-t border-dotted border-gray-400 z-0" :style="`top: ${(hour - 9) * 60}px`"></div>
+          <div v-for="hour in hours" :key="hour" class="absolute w-full border-t border-dotted border-gray-400 z-0" 
+            :style="`top: ${(hour * 60 - START_HOUR * 60 - START_MIN)}px`">
+          </div>
+
+          <!-- extra 15分（18:15のline） -->
+          <div class="absolute w-full border-t border-dotted border-gray-400 z-0" 
+            :style="`top: ${(END_HOUR * 60 + END_MIN - START_HOUR * 60 - START_MIN)}px`">
+          </div>
 
           <!-- schedule box -->
           <div
