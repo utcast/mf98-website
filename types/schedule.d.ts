@@ -1,26 +1,28 @@
-// /types/schedule.d.ts
 export interface Schedule {
-    id: number;
-    day: number;
-    channel: string;
-    kikaku: string;
-    startHour: number;
-    startMin: number;
-    endHour: number;
-    endMin: number;
-  }
-  
-  export interface ScheduleWithInfo extends Schedule {
-    kikakuInfo: {
-      title: string;
-      title_short: string;
-      description: string;
-      icon: string;
-      [key: string]: any;
-    };
-    ticketStatus: {
-      reserved: number;
-      limit: number;
-    };
-  }
-  
+  id: number;
+  day: number;
+  channel: 'show' | 'atelier';
+  kikaku: string;
+  startHour: number;
+  startMin: number;
+  endHour: number;
+  endMin: number;
+}
+
+export interface Kikaku {
+  title: string;
+  description: string;
+  color: string;
+  channel: 'show' | 'atelier';
+  url?: { name: string };
+  image?: string;
+  title_short?: string;
+}
+
+export interface ScheduleWithInfo extends Schedule {
+  kikakuInfo: Kikaku;
+  ticketStatus: {
+    reserved: number;
+    limit: number;
+  };
+}

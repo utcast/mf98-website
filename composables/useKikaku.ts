@@ -1,9 +1,11 @@
 export const useKikaku = () => {
-  const getKikaku = (slug: string): Kikaku | undefined => {
-    return kikaku[slug]
+  const getKikaku = (slug: string): Kikaku | null => {
+    return kikaku[slug] || null // fallbackで null を返す
   }
   return { getKikaku }
 }
+
+
 
 export interface Kikaku {
   title: string;

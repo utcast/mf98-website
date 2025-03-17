@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue'
 import { useKikaku } from '@/composables/useKikaku'
 import { useTickets } from '@/composables/useTickets'
+import type { Schedule, ScheduleWithInfo } from '@/types/schedule'
 import schedules from '@/static/json/schedule.json'
 import ScheduleModal from '@/components/ScheduleModal.vue'
 
@@ -10,12 +11,19 @@ const { getTicketStatus } = useTickets()
 
 const hours = Array.from({ length: 9 }, (_, i) => i + 9)
 
+// "nullなkikaku"はフィルターで排除する
 const schedulesWithInfo = computed(() =>
-  schedules.map((s) => ({
-    ...s,
-    kikakuInfo: getKikaku(s.kikaku) || {}, // fallback追加
-    ticketStatus: getTicketStatus(s.id)
-  }))
+  (schedules as Schedule[])
+    .map((s) => {
+      const kikakuInfo = getKikaku(s.kikaku)
+      if (!kikakuInfo) return null
+      return {
+        ...s,
+        kikakuInfo,
+        ticketStatus: getTicketStatus(s.id)
+      } as ScheduleWithInfo
+    })
+    .filter((s): s is ScheduleWithInfo => s !== null) // 型ガードを追加
 )
 
 const filteredSchedules = computed(() => {
@@ -27,20 +35,20 @@ const filteredSchedules = computed(() => {
   ]
 })
 
-const calcPosition = (schedule: any) => {
+const calcPosition = (schedule: ScheduleWithInfo) => {
   const minutes = (schedule.startHour * 60 + schedule.startMin) - (9 * 60)
   return minutes
 }
 
-const calcHeight = (schedule: any) => {
+const calcHeight = (schedule: ScheduleWithInfo) => {
   const start = schedule.startHour * 60 + schedule.startMin
   const end = schedule.endHour * 60 + schedule.endMin
   return end - start
 }
 
-const modalSchedule = ref<any | null>(null)
+const modalSchedule = ref<ScheduleWithInfo | null>(null)
 
-const openModal = (schedule: any) => {
+const openModal = (schedule: ScheduleWithInfo) => {
   modalSchedule.value = schedule
 }
 </script>
@@ -72,7 +80,6 @@ const openModal = (schedule: any) => {
           <div
             v-for="schedule in colSchedules"
             :key="schedule.id"
-            v-if="schedule.kikakuInfo && schedule.kikakuInfo.title_short"
             class="absolute z-10 bg-blue-500 text-white text-xs rounded p-1 shadow hover:bg-blue-600 cursor-pointer"
             :style="`top: ${calcPosition(schedule)}px; height: ${calcHeight(schedule)}px; left: 4px; right: 4px;`"
             @click="openModal(schedule)"
@@ -86,7 +93,7 @@ const openModal = (schedule: any) => {
 
     <!-- モーダル -->
     <ScheduleModal
-      v-if="modalSchedule && modalSchedule.kikakuInfo && modalSchedule.kikakuInfo.title"
+      v-if="modalSchedule"
       :schedule="modalSchedule"
       @close="modalSchedule = null"
     />
