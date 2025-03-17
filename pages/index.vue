@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center" style="width:100%;height:100%;">
+  <div class="flex flex-col items-center" style="width:100%;height:100%;">
     <div class="container flex flex-col items-center justify-center p-4 bg-white shadow-md rounded-lg my-8">
       <h1>
         <T v="[東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025"></T>
@@ -19,6 +19,10 @@
         <T v="を[出展](しゅってん)しています！"></T>
       </div>
     </div>
+    <!-- TitleTriangle コンポーネントを追加 -->
+    <div class="w-full flex justify-start">
+      <TitleTriangle title="企画紹介" position="left" />
+    </div>
   </div>
 </template>
 
@@ -27,6 +31,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import T from '~/components/T.vue'
+import TitleTriangle from '~/components/TitleTriangle.vue'
 
 library.add(faCaretRight)
 
@@ -34,6 +39,7 @@ export default {
   components: {
     'font-awesome-icon': FontAwesomeIcon,
     T,
+    TitleTriangle,
   },
 }
 </script>
