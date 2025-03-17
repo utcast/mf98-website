@@ -13,7 +13,6 @@
 import { useKikaku } from '@/composables/useKikaku'
 import ScheduleTable from '@/components/ScheduleTable.vue'
 
-
 // SEO設定
 useHead({
   title: 'タイムスケジュール',
@@ -33,7 +32,6 @@ useHead({
   ]
 })
 
-// Advに渡す色はkikakuの「live」色を再利用
 const { getKikaku } = useKikaku()
 const getColor = () => {
   const live = getKikaku('kaiten') // 例:回転ショーの色など任意で取得

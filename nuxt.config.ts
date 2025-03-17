@@ -50,8 +50,8 @@ export default defineNuxtConfig({
   vite: {
     resolve: {
       alias: {
-        '@': '/'
       }
     }
   }
+  
 })
