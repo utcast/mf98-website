@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 
+  telemetry: false, // Telemetry を無効化
+
   app: {
     baseURL: process.env.NUXT_BASE_URL || "/",    
     head: {
@@ -26,8 +28,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
-  css: ['~/assets/css/tailwind.css',
-        '~/assets/css/global.css'
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/css/global.css'
   ],
   postcss: {
     plugins: {
@@ -50,8 +53,8 @@ export default defineNuxtConfig({
   vite: {
     resolve: {
       alias: {
+        // 必要に応じてエイリアスを追加
       }
     }
   }
-  
 })
