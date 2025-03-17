@@ -20,7 +20,12 @@ export default defineNuxtConfig({
         { name: 'twitter:site', content: '@ut_cast' },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://ut-cast.net/favicon.ico' }]
-    }
+    },
+    // ページトランジションの設定を追加
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+    },
   },
 
   // Tailwind CSS の設定を追加

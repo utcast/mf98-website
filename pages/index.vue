@@ -8,7 +8,7 @@
         <span class="text-sm md:text-base">5</span><span class="text-xs"><T v="[月](がつ)"></T></span>
         <span class="text-sm md:text-base ml-1">24</span><span class="text-xs"><T v="[日](にち)"></T></span>
         <span class="text-xs bg-blue-600 text-white mx-2 p-1 rounded">土</span>
-        <font-awesome-icon class="mx-2 text-lg" :icon="['fas', 'caret-right']"></font-awesome-icon>
+        <span class="material-symbols-outlined mx-2 text-lg">chevron_right</span>
         <span class="text-sm md:text-base">25</span><span class="text-xs"><T v="[日](にち)"></T></span>
         <span class="text-xs bg-red-600 text-white mx-2 p-1 rounded">日</span>
       </div>
