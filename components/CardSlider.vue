@@ -27,9 +27,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const cards = [
-  { to: '/pen', color: '#1B682B', title: '文房具ブース' },
-  { to: '/close', color: '#952D87', title: '服ブース' },
-  { to: '/heat', color: '#E56A27', title: '熱ブース' },
+  { to: '/museum/pen', color: '#1B682B', title: '文房具ブース' },
+  { to: '/museum/close', color: '#952D87', title: '服ブース' },
+  { to: '/museum/heat', color: '#E56A27', title: '熱ブース' },
 ]
 </script>
 
