@@ -1,9 +1,15 @@
 <template>
   <div class="flex flex-col items-center" style="width:100%;height:100%;">
     <div class="flex justify-center space-x-4 my-4">
-      <img src="@/assets/img/museum_logo.png" alt="ミュージアムロゴ" class="h-16">
-      <img src="@/assets/img/show_logo.png" alt="ショーロゴ" class="h-16">
-      <img src="@/assets/img/atelier_logo.png" alt="アトリエロゴ" class="h-16">
+      <NuxtLink to="/museum">
+        <img src="@/assets/img/museum_logo.png" alt="ミュージアムロゴ" class="h-16">
+      </NuxtLink>
+      <NuxtLink to="/show">
+        <img src="@/assets/img/show_logo.png" alt="ショーロゴ" class="h-16">
+      </NuxtLink>
+      <NuxtLink to="/atelier">
+        <img src="@/assets/img/atelier_logo.png" alt="アトリエロゴ" class="h-16">
+      </NuxtLink>
     </div>
     <div class="container flex flex-col items-center justify-center p-4 bg-white shadow-md rounded-lg my-8">
       <h1>
@@ -38,6 +44,7 @@ import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import T from '~/components/T.vue'
 import TitleTriangle from '~/components/TitleTriangle.vue'
+import CardSlider from '~/components/CardSlider.vue'
 
 library.add(faCaretRight)
 
@@ -46,6 +53,7 @@ export default {
     'font-awesome-icon': FontAwesomeIcon,
     T,
     TitleTriangle,
+    CardSlider,
   },
 }
 </script>
