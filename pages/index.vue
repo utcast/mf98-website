@@ -22,6 +22,7 @@
     <!-- TitleTriangle コンポーネントを追加 -->
     <div class="w-full flex justify-start">
       <TitleTriangle title="企画紹介" position="left" />
+      <CardSlider />
     </div>
   </div>
 </template>
