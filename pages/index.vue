@@ -1,5 +1,10 @@
 <template>
   <div class="flex flex-col items-center" style="width:100%;height:100%;">
+    <div class="flex justify-center space-x-4 my-4">
+      <img src="@/assets/img/museum_logo.png" alt="ミュージアムロゴ" class="h-16">
+      <img src="@/assets/img/show_logo.png" alt="ショーロゴ" class="h-16">
+      <img src="@/assets/img/atelier_logo.png" alt="アトリエロゴ" class="h-16">
+    </div>
     <div class="container flex flex-col items-center justify-center p-4 bg-white shadow-md rounded-lg my-8">
       <h1>
         <T v="[東大](とうだい) [CAST](きゃすと) [五月祭](ごがつさい)2025"></T>
