@@ -6,7 +6,7 @@
     <nav>
       <ul class="grid grid-cols-1 gap-3">
         <li class="my-2">
-          <nuxt-link to="/museum/close" class="block bg-white rounded-xl p-3 border border-gray-300 shadow-md text-blue-700 font-medium hover:bg-blue-100 transition-all">
+          <nuxt-link to="/museum/clothes" class="block bg-white rounded-xl p-3 border border-gray-300 shadow-md text-blue-700 font-medium hover:bg-blue-100 transition-all">
             <T v="[服](ふく)ブース"></T>
           </nuxt-link>
         </li>
