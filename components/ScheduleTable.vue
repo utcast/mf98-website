@@ -85,21 +85,21 @@ const openModal = (schedule: ScheduleWithInfo) => {
             :style="`top: ${(hour * 60 - START_HOUR * 60 - START_MIN)}px`">
           </div>
 
-          <!-- extra 15分（18:15のline） -->
+          <!-- extra 15分（18:15のline）
           <div class="absolute w-full border-t border-dotted border-gray-400 z-0" 
             :style="`top: ${(END_HOUR * 60 + END_MIN - START_HOUR * 60 - START_MIN)}px`">
-          </div>
+          </div> -->
 
           <!-- schedule box -->
           <div
             v-for="schedule in colSchedules"
             :key="schedule.id"
-            class="absolute z-10 bg-blue-500 text-white text-xs rounded p-1 shadow hover:bg-blue-600 cursor-pointer"
+            class="absolute z-10 bg-blue-500 text-white text-[10px] rounded p-1 shadow hover:bg-blue-600 cursor-pointer"
             :style="`top: ${calcPosition(schedule)}px; height: ${calcHeight(schedule)}px; left: 4px; right: 4px;`"
             @click="openModal(schedule)"
           >
-            <div class="font-bold">{{ schedule.kikakuInfo.title_short }}</div>
-            <div class="text-[10px]">{{ schedule.startHour }}:{{ ('0' + schedule.startMin).slice(-2) }} 〜 {{ schedule.endHour }}:{{ ('0' + schedule.endMin).slice(-2) }}</div>
+            <div class="font-bold text-[9px]">{{ schedule.kikakuInfo.title_short }}</div>
+            <div class="text-[8px]">{{ schedule.startHour }}:{{ ('0' + schedule.startMin).slice(-2) }} 〜 {{ schedule.endHour }}:{{ ('0' + schedule.endMin).slice(-2) }}</div>
           </div>
         </div>
       </div>
