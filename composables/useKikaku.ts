@@ -5,8 +5,6 @@ export const useKikaku = () => {
   return { getKikaku }
 }
 
-
-
 export interface Kikaku {
   title: string;
   description: string;
@@ -53,6 +51,15 @@ const kikaku: Record<string, Kikaku> = {
     url: { name: 'nenriki' },
     image: '/img/thumbnail/nenriki.png',
     title_short: '念力振り子',
+  },
+  kimiS: {
+    title: '君もSCをしてみよう',
+    description: 'SCの楽しさを体験しよう！',
+    color: 'zoom',
+    channel: 'atelier',
+    url: { name: 'kimiS' },
+    image: '/img/thumbnail/kimiS.png',
+    title_short: '君S',
   },
 }
 
