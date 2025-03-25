@@ -1,11 +1,12 @@
 <template>
   <div :class="['triangle-wrapper', positionClass]">
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title"><T :v="title"></T></h1>
   </div>
 </template>
 
 <script setup>
 import { computed } from 'vue'
+import T from '~/components/T.vue'
 
 const props = defineProps({
   title: {
