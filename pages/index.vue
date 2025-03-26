@@ -39,18 +39,12 @@
 </template>
 
 <script>
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import T from '~/components/T.vue'
 import TitleTriangle from '~/components/TitleTriangle.vue'
 import CardSlider from '~/components/CardSlider.vue'
 
-library.add(faCaretRight)
-
 export default {
   components: {
-    'font-awesome-icon': FontAwesomeIcon,
     T,
     TitleTriangle,
     CardSlider,

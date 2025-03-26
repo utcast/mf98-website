@@ -10,6 +10,7 @@
       <div v-if="schedule.channel === 'atelier'" class="text-sm font-bold text-center text-gray-800">
         整理券: {{ schedule.ticketStatus.reserved }}/{{ schedule.ticketStatus.limit }}枚
       </div>
+      
     </div>
   </div>
 </template>
