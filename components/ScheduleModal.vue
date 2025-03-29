@@ -4,13 +4,35 @@
       <button class="absolute top-2 right-2 text-red-500" @click="$emit('close')">✕</button>
       <div class="text-center mb-4">
         <Icon :icon="schedule.kikakuInfo.icon" class="text-3xl mb-2" />
-        <h3 class="text-lg font-bold">{{ schedule.kikakuInfo.title }}</h3>
-        <p class="text-sm text-gray-600">{{ schedule.kikakuInfo.description }}</p>
+        <h3 
+          class="text-lg font-bold" 
+          :class="{
+            'line-through text-gray-500': schedule.channel === 'atelier' && schedule.ticketStatus.reserved === 0
+          }"
+        >
+          {{ schedule.kikakuInfo.title }}
+        </h3>
+        <p 
+          class="text-sm" 
+          :class="{
+            'line-through text-gray-500': schedule.channel === 'atelier' && schedule.ticketStatus.reserved === 0,
+            'text-gray-600': !(schedule.channel === 'atelier' && schedule.ticketStatus.reserved === 0)
+          }"
+        >
+          {{ schedule.kikakuInfo.description }}
+        </p>
       </div>
-      <div v-if="schedule.channel === 'atelier'" class="text-sm font-bold text-center text-gray-800">
+      <div 
+        v-if="schedule.channel === 'atelier'" 
+        class="text-sm font-bold text-center" 
+        :class="{
+          'line-through text-gray-500': schedule.ticketStatus.reserved === 0,
+          'text-red-500': schedule.ticketStatus.reserved >= 1 && schedule.ticketStatus.reserved <= 5,
+          'text-gray-800': schedule.ticketStatus.reserved > 5
+        }"
+      >
         整理券: {{ schedule.ticketStatus.reserved }}/{{ schedule.ticketStatus.limit }}枚
       </div>
-      
     </div>
   </div>
 </template>
