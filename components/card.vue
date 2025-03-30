@@ -21,13 +21,14 @@ defineProps({
 .card {
   border: 1px solid #ccc;
   padding: 10px;
-  width: 200px;
   text-align: center;
+  width: 100%;
 }
 
 .card-image {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  justify-content: center;
 }
 </style>
