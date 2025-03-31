@@ -1,5 +1,5 @@
 <template>
-  <div class="museum-nav atelier-nav bg-white shadow-lg p-4 text-center max-w-7xl mx-auto">
+  <div class="museum-nav atelier-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
     <h1 class="text-3xl font-bold mb-6">
       <T v="「作って[体感](たいかん)！サイエンスアトリエ」"></T>
     </h1>

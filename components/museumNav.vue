@@ -1,22 +1,22 @@
 <template>
-  <div class="museum-nav bg-white shadow-lg p-4 text-center w-4/5 mx-auto">
-    <h1 class="text-3xl font-bold mb-6">
+  <div class="museum-nav bg-white shadow-lg p-4 text-center mx-auto max-w-6xl">
+    <h1 class="text-3xl font-bold mb-6 text-[#0A0A0A]">
       <T v="「なるほど[実感](じっかん)！サイエンスミュージアム」"></T>
       <!-- この部分いつものロゴへの変更もありな気がします -->
     </h1>
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justfy-center items-center mx-auto">
-        <li class=" mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
+        <li class=" mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
           <nuxt-link to="/museum/clothes" class="tab-youtube" :class="[tabActive === 'clothes' ? 'tab-active' : 'tab-inactive']">
             <T v="[服](ふく)ブース"></T>
           </nuxt-link>
         </li>
-        <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
+        <li class="mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
           <nuxt-link to="/museum/heat" class="tab-youtube" :class="[tabActive === 'heat' ? 'tab-active' : 'tab-inactive']">
             <T v="[熱](ねつ)ブース"></T> 
           </nuxt-link>
         </li>
-        <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">
+        <li class="mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">
           <nuxt-link to="/museum/pen" class="tab-youtube " :class="[tabActive === 'pen' ? 'tab-active' : 'tab-inactive']">
             <T v="[文房具](ぶんぼうぐ)ブース"></T>
           </nuxt-link>

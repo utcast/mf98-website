@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h2><T :v="title" /></h2>
+    <h1 class="font-bold border-b"><T :v="title" /></h1>
     <img :src="img" :alt="alt" class="card-image" />
     <p><T :v="content" /></p>
   </div>
