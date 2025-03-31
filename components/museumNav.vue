@@ -1,28 +1,29 @@
 <template>
-  <div class="museum-nav bg-white shadow-lg p-4 text-center max-w-7xl mx-auto">
+  <div class="museum-nav bg-white shadow-lg p-4 text-center w-4/5 mx-auto">
     <h1 class="text-3xl font-bold mb-6">
       <T v="「なるほど[実感](じっかん)！サイエンスミュージアム」"></T>
       <!-- この部分いつものロゴへの変更もありな気がします -->
     </h1>
     <nav class="my-4 justify-center">
-      <ul class="flex border-b border-youtube justify-center">
-        <li class="mr-1" :class="{ 'tab-active-li': tabActive === 'clothes' }">
+      <ul class="w-4/5 flex justfy-center items-center mx-auto">
+        <li class=" mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
           <nuxt-link to="/museum/clothes" class="tab-youtube" :class="[tabActive === 'clothes' ? 'tab-active' : 'tab-inactive']">
             <T v="[服](ふく)ブース"></T>
           </nuxt-link>
         </li>
-        <li class="mr-1" :class="{ 'tab-active-li': tabActive === 'heat' }">
+        <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
           <nuxt-link to="/museum/heat" class="tab-youtube" :class="[tabActive === 'heat' ? 'tab-active' : 'tab-inactive']">
             <T v="[熱](ねつ)ブース"></T> 
           </nuxt-link>
         </li>
-        <li class="mr-1" :class="{ 'tab-active-li': tabActive === 'pen' }">
-          <nuxt-link to="/museum/pen" class="tab-youtube" :class="[tabActive === 'pen' ? 'tab-active' : 'tab-inactive']">
+        <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">
+          <nuxt-link to="/museum/pen" class="tab-youtube " :class="[tabActive === 'pen' ? 'tab-active' : 'tab-inactive']">
             <T v="[文房具](ぶんぼうぐ)ブース"></T>
           </nuxt-link>
         </li>
       </ul>
-      <slot></slot>
+      <slot  class="p-4 border-l border-r border-b rounded-b shadow-md " :class="[!tabActive ? 'border-[#d15887]' : 'border-[#d15887]']">
+      </slot>
     </nav>
     <Questionnaire></Questionnaire>
   </div>

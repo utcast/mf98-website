@@ -1,7 +1,7 @@
 <template>
   <div>
     <MuseumNav>
-    <div class="w-4/5 bg-gray-50 p-6 rounded-lg shadow-md mx-auto">
+    <div class="tab_museum w-4/5 bg-gray-50 p-6 rounded-lg shadow-md mx-auto">
       <div class="flex justify-center item-center space-x-4 my-3">
         <img src="" alt="文房具ブースロゴ" class="object-contain h-11" />
         <h1 class="text-4xl font-bold text-center">文房具ブース</h1>

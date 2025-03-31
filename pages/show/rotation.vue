@@ -1,9 +1,9 @@
 <template>
   <div>
     <ShowNav>
-    <div class="w-4/5 bg-gray-50 p-6 rounded-lg shadow-md mx-auto">
+    <div class="tab_museum w-4/5 bg-gray-50 p-6 rounded-lg shadow-md mx-auto">
       <div class="flex justify-center item-center space-x-4 my-3">
-        <img src="" alt="回転ショーロゴ" class="object-contain h-11" />
+        <img src="@/assets/img/rotation_logo.png" alt="回転ショーロゴ" class="object-contain h-11" />
         <h1 class="text-4xl font-bold text-center">回転ショー</h1>
       </div>
       <div class="card-container flex flex-col items-center w-3/4 mx-auto">

@@ -13,6 +13,61 @@ body {
       'opsz' 48;
 }
 
+
+
+/* Tailwind CSSのカスタムクラス */
+:root {
+  --color-main: #66bf9d;
+  --color-youtube: #0168B7;
+  --color-back: #f9fafb;
+}
+
+.tab_museum{
+  border-left: 1.5px solid var(--color-main);
+  border-right: 1.5px solid var(--color-main);
+  border-top: 1.5px solid var(--color-main);
+  border-bottom: 1.5px solid var(--color-main);
+  border-radius: 0 0 8px 8px;
+  margin-top: -1.5px;
+}
+
+.tab-active {
+  background-color: #f9fafb;
+  display: inline-block;
+  border-left: 1.5px solid var(--color-main);
+  border-top: 1.5px solid var(--color-main);
+  border-right: 1.5px solid var(--color-main);
+  border-bottom-style: hidden;
+  border-radius: 6px 6px 0 0; /* 上側だけ角を丸く */
+  padding: 8px 16px; /* py-2 px-4 に相当 */
+  color: var(--color-main);
+  font-weight: 600; /* font-semibold に相当 */
+  cursor: pointer;
+}
+
+.tab-inactive {
+  background-color: white;
+  display: inline-block;
+  padding: 8px 16px;
+  color: var(--color-main);
+  opacity: 0.75;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.tab-inactive:hover {
+  opacity: 1;
+}
+
+.tab-youtube {
+  color: var(--color-main) !important;
+  border-color: var(--color-main) !important;
+  font-size: 100%;
+}
+
+
+
 /* ページトランジションのスタイル */
 .page-enter-active, .page-leave-active {
   transition: opacity 0.2s;
