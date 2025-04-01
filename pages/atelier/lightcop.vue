@@ -6,7 +6,7 @@
           <img src="" alt="三原色コップロゴ" class="object-contain h-11" />
           <h1 class="text-4xl font-bold text-center">三原色コップ</h1>
         </div>
-        <div class="card-container flex flex-col items-center w-3/4 mx-auto">
+        <div class="card-container flex flex-col items-center w-5/6 mx-auto">
           <Card v-for="(card, index) in filteredCards" :key="index" :title="card.title" :content="card.content" :img="card.img" />
         </div>
       </div>

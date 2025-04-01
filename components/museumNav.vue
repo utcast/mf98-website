@@ -6,17 +6,17 @@
     </h1>
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justfy-center items-center mx-auto">
-        <li class=" mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
+        <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
           <nuxt-link to="/museum/clothes" class="tab-youtube" :class="[tabActive === 'clothes' ? 'tab-active' : 'tab-inactive']">
             <T v="[服](ふく)ブース"></T>
           </nuxt-link>
         </li>
-        <li class="mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
+        <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
           <nuxt-link to="/museum/heat" class="tab-youtube" :class="[tabActive === 'heat' ? 'tab-active' : 'tab-inactive']">
             <T v="[熱](ねつ)ブース"></T> 
           </nuxt-link>
         </li>
-        <li class="mr-4 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">
+        <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">
           <nuxt-link to="/museum/pen" class="tab-youtube " :class="[tabActive === 'pen' ? 'tab-active' : 'tab-inactive']">
             <T v="[文房具](ぶんぼうぐ)ブース"></T>
           </nuxt-link>
