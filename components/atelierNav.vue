@@ -1,8 +1,8 @@
 <template>
   <div class="museum-nav atelier-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
-    <h1 class="text-3xl font-bold mb-6">
-      <T v="「作って[体感](たいかん)！サイエンスアトリエ」"></T>
-    </h1>
+    <!-- ロゴ画像を表示 -->
+    <img src="@/assets/img/atelier_logo.png" alt="アトリエロゴ" class="mx-auto h-16 mb-6" />
+ 
       <nav class="my-4 justify-center">
         <ul class="w-4/5 flex  justfy-center items-center mx-auto">
           <li class="mr-1" :class="{ 'tab-active-li': tabActive === 'box' }">

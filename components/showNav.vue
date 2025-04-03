@@ -1,8 +1,7 @@
 <template>
   <div class="museum-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
-    <h1 class="text-3xl font-bold mb-6">
-      <T v="「なるほど[体感](たいかん)！サイエンスショー」"></T>
-    </h1>
+    <!-- ロゴ画像を表示 -->
+    <img src="@/assets/img/show_logo.png" alt="ショーロゴ" class="mx-auto h-16 mb-6" />
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justify-center mx-auto">
         <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'rotation' }">

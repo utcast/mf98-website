@@ -1,9 +1,7 @@
 <template>
   <div class="museum-nav bg-white shadow-lg p-4 text-center mx-auto max-w-6xl">
-    <h1 class="text-3xl font-bold mb-6 text-[#0A0A0A]">
-      <T v="「なるほど[実感](じっかん)！サイエンスミュージアム」"></T>
-      <!-- この部分いつものロゴへの変更もありな気がします -->
-    </h1>
+    <!-- ロゴ画像を表示 -->
+    <img src="@/assets/img/museum_logo.png" alt="ミュージアムロゴ" class="mx-auto h-16 mb-6" />
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justfy-center items-center mx-auto">
         <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">
@@ -22,7 +20,7 @@
           </nuxt-link>
         </li>
       </ul>
-      <slot  class="p-4 border-l border-r border-b rounded-b shadow-md " :class="[!tabActive ? 'border-[#d15887]' : 'border-[#d15887]']">
+      <slot class="p-4 border-l border-r border-b rounded-b shadow-md" :class="[!tabActive ? 'border-[#d15887]' : 'border-[#d15887]']">
       </slot>
     </nav>
     <Questionnaire></Questionnaire>
