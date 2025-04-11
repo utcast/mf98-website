@@ -65,5 +65,6 @@ const positionClass = computed(() => {
   color: black;
   font-size: 20px;
   font-weight: bold;
+  white-space: nowrap;
 }
 </style>
