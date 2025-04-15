@@ -31,7 +31,7 @@
           'text-gray-800': schedule.ticketStatus.reserved > 5
         }"
       >
-        整理券: {{ schedule.ticketStatus.reserved }}/{{ schedule.ticketStatus.limit }}枚
+        整理券残り: {{ schedule.ticketStatus.reserved }}/{{ schedule.ticketStatus.limit }}枚
       </div>
     </div>
   </div>
