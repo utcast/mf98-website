@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   telemetry: false, // Telemetry を無効化
 
   app: {
-    baseURL: process.env.NUXT_BASE_URL || "/",    
+    baseURL: "/mayfes2025/",    
     head: {
       titleTemplate: '%s - 東大CAST五月祭2025特設ページ',
       meta: [
