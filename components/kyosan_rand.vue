@@ -1,10 +1,12 @@
 <script setup>
-import { computed } from 'vue'
-import { useSponsors } from '~/composables/useSponsors'//協賛企業増えたらこの先のファイルいじってね
+import { ref, onMounted } from 'vue'
+import { useSponsors } from '~/composables/useSponsors'
 
 const { sponsors } = useSponsors()
 
-// 重みに基づいてランダムに一つの協賛企業を選択する関数
+const selectedSponsor = ref(null)
+
+// 重みに基づいてランダムに1つの協賛企業を選ぶ関数
 const getRandomSponsor = () => {
   const totalWeight = sponsors.value.reduce((sum, sponsor) => sum + sponsor.weight, 0)
   let random = Math.random() * totalWeight
@@ -17,8 +19,10 @@ const getRandomSponsor = () => {
   return null
 }
 
-// 選択された協賛企業
-const selectedSponsor = computed(() => getRandomSponsor())
+// 初期表示時にスポンサーを選ぶ
+onMounted(() => {
+  selectedSponsor.value = getRandomSponsor()
+})
 </script>
 
 <template>

@@ -35,6 +35,47 @@ const toggleMenu = () => {
         <ruby>CAST <rt>きゃすと</rt></ruby> 
         <ruby>五月祭 <rt>ごがつさい</rt></ruby>2025
       </div>
+
+      <div class="nav-links hidden md:flex flex-wrap justify-center gap-4 flex-grow">
+    <span>
+      <nuxt-link to="/" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">home</span>
+        ホーム
+      </nuxt-link>
+    </span>
+    <span>
+      <nuxt-link to="/museum" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">school</span>
+        ミュージアム
+      </nuxt-link>
+    </span>
+    <span>
+      <nuxt-link to="/show" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">festival</span>
+        ショー
+      </nuxt-link>
+    </span>
+    <span>
+      <nuxt-link to="/atelier" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">palette</span>
+        アトリエ
+      </nuxt-link>
+    </span>
+    <span>
+      <nuxt-link to="/schedule" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">calendar_today</span>
+        スケジュール
+      </nuxt-link>
+    </span>
+    <span>
+      <nuxt-link to="/access" class="text-white no-underline flex items-center">
+        <span class="material-symbols-outlined">near_me</span>
+        アクセス
+      </nuxt-link>
+    </span>
+  </div>
+
+
       <div class="toggle-buttons flex flex-col items-center gap-1">
         <div class="label text-white text-xs">ふりがな</div>
         <div class="toggle-button py-1 px-2 rounded cursor-pointer bg-blue-700 text-white" :class="{ 'bg-white text-blue-700': rubyVisible }" @click="toggleFurigana(true)">あり</div>
@@ -89,45 +130,6 @@ const toggleMenu = () => {
       </ul>
     </nav>
 
-    <!-- デスクトップ用のナビゲーション -->
-    <div class="nav-links hidden md:flex justify-center gap-4 mt-4">
-      <span>
-        <nuxt-link to="/" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">home</span>
-          ホーム
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link to="/museum" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">school</span>
-          ミュージアム
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link to="/show" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">festival</span>
-          ショー
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link to="/atelier" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">palette</span>
-          アトリエ
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link to="/schedule" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">calendar_today</span>
-          スケジュール
-        </nuxt-link>
-      </span>
-      <span>
-        <nuxt-link to="/access" class="text-white no-underline flex items-center">
-          <span class="material-symbols-outlined">near_me</span>
-          アクセス
-        </nuxt-link>
-      </span>
-    </div>
   </header>
 </template>
 
