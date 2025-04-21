@@ -14,7 +14,9 @@ const { sponsors } = useSponsors()
           </a>
         </div>
     </div>
-    <TitleTriangle title="ご協賛企業様" position="right" />
+    <div class="title-triangle">
+      <TitleTriangle title="ご協賛企業様" position="right" />
+    </div>
   </div>
 </template>
 
@@ -22,6 +24,8 @@ const { sponsors } = useSponsors()
 .sponsors-wrapper {
   position: relative;
   width: 100%;
+  height: auto;
+  min-height: 250px;
   display: flex;
   justify-content: flex-end; /* 右に揃える */
   background-color: #D9EFFF; /* 背景色を追加 */
@@ -36,8 +40,8 @@ const { sponsors } = useSponsors()
   gap: 1rem;
   background-color: white; /* 背景色を追加 */
   padding: 1rem; /* パディングを追加 */
-  position: absolute;
-  z-index: 1; /* 重なり順を調整 */
+  position: relative;
+  z-index: 2; /* 重なり順を調整 */
   width: 80%; /* デバイスの幅に対して80% */
   margin-left: 10%; /* 中央揃え */
   margin-right: 10%; /* 中央揃え */
@@ -60,6 +64,6 @@ const { sponsors } = useSponsors()
   position: absolute;
   top: -1.5rem; /* 少し上に配置 */
   right: 0;
-  z-index: 2; /* sponsors の上に表示 */
+  z-index: 1; /* sponsors の下に表示 */
 }
 </style>
