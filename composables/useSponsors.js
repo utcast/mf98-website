@@ -4,7 +4,7 @@ export const useSponsors = () => {
   const sponsors = ref([
     {
       name: '東罐興業株式会社',
-      image: '/kyosan/東罐興業株式会社_ロゴ.pdf',
+      image: '/kyosan/東罐興業株式会社-edited.png',
       link: 'https://www.tokan.co.jp',
       weight: 3
     },
@@ -22,25 +22,25 @@ export const useSponsors = () => {
     },
     {
       name: '有限会社神山新聞店',
-      image: '/kyosan/有限会社神山新聞店.pdf',
+      image: '/kyosan/神山新聞店-edited.png',
       link: 'https://www.anshin-denki-kaiketsu.com/',
       weight: 2
     },
     {
       name: '株式会社日本標準',
-      image: '/kyosan/五月祭2025ロゴマーク（日本標準）.pdf',
+      image: '/kyosan/日本標準-edited.png',
       link: 'https://www.nipponhyojun.co.jp',
       weight: 3
     },
     {
       name: 'グンゼ株式会社',
-      image: '/kyosan/基本形GUNZE_statement.jpg',
+      image: '/kyosan/GUNZE-edited.png',
       link: 'https://www.gunze.co.jp',
       weight: 10
     },
     {
       name: 'オリエンタル技研工業株式会社',
-      image: '/kyosan/ORIENTAL Logo.pdf',
+      image: '/kyosan/ORIENTAL-edited.png',
       link: 'https://www.orientalgiken.co.jp',
       weight: 5
     },
@@ -52,7 +52,7 @@ export const useSponsors = () => {
     },
     {
       name: '株式会社ダ・ビンチ',
-      image: '/kyosan/DVLogo20.jpg',
+      image: '/kyosan/DV-edited.png',
       link: 'https://davinci-mode.co.jp',
       weight: 3
     },
