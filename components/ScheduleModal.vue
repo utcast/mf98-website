@@ -10,7 +10,7 @@
             'line-through text-gray-500': schedule.channel === 'atelier' && schedule.ticketStatus.reserved === 0
           }"
         >
-          {{ schedule.kikakuInfo.title }}
+          <T :v="schedule.kikakuInfo.title" />
         </h3>
         <p 
           class="text-sm" 
@@ -19,7 +19,7 @@
             'text-gray-600': !(schedule.channel === 'atelier' && schedule.ticketStatus.reserved === 0)
           }"
         >
-          {{ schedule.kikakuInfo.description }}
+          <T :v="schedule.kikakuInfo.description" />
         </p>
       </div>
       <div 
@@ -31,12 +31,13 @@
           'text-gray-800': schedule.ticketStatus.reserved > 5
         }"
       >
-        整理券残り: {{ schedule.ticketStatus.reserved }}/{{ schedule.ticketStatus.limit }}枚
+        <T :v="`整理券残り: ${schedule.ticketStatus.reserved}/${schedule.ticketStatus.limit}枚`" />
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import T from '@/components/T.vue'
 defineProps<{ schedule: any }>()
 </script>

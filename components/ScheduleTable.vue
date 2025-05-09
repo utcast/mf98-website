@@ -98,7 +98,9 @@ const openModal = (schedule: ScheduleWithInfo) => {
             :style="`top: ${calcPosition(schedule)}px; height: ${calcHeight(schedule)}px; left: 4px; right: 4px;`"
             @click="openModal(schedule)"
           >
-            <div class="font-bold text-[9px]">{{ schedule.kikakuInfo.title_short }}</div>
+            <div class="font-bold text-[9px]">
+              <T :v="schedule.kikakuInfo.title_short" />
+            </div>
             <div class="text-[8px]">{{ schedule.startHour }}:{{ ('0' + schedule.startMin).slice(-2) }} 〜 {{ schedule.endHour }}:{{ ('0' + schedule.endMin).slice(-2) }}</div>
           </div>
         </div>
