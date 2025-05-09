@@ -1,0 +1,1 @@
+import{_ as o}from"./DR93hni_.js";import{u as t,c as r,a,o as s}from"./Sy_CrurD.js";const m={__name:"index",setup(n){return t().replace({name:"show-rotation"}),(l,e)=>(s(),r("div",null,e[0]||(e[0]=[a("img",{src:o,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{m as default};
