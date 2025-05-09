@@ -24,7 +24,10 @@ defineProps({
   text-align: center;
   width: 100%;
 }
-
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
 .card-image {
   max-width: 100%;
   height: auto;
