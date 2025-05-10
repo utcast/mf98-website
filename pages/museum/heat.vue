@@ -3,7 +3,7 @@
     <MuseumNav>
     <div class="tab_museum w-4/5 bg-gray-50 p-6 shadow-md mx-auto border-l border-r border-b">
       <div class="flex justify-center item-center space-x-4 my-3">
-        <img src="@/assets/img/heat_logo.jpg" alt="熱ブースロゴ" class="object-contain h-11" />
+        <img src="@/assets/img/heat_logo.png" alt="熱ブースロゴ" class="object-contain h-11" />
         <h1 class="text-4xl font-bold text-center">熱ブース</h1>
       </div>
         <div class="card-container flex flex-col items-center w-5/6 mx-auto">

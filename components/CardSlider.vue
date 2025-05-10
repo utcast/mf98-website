@@ -30,7 +30,7 @@ import 'swiper/css/pagination'
 // 画像のインポート
 import penImg from '@/assets/img/pen_logo.png'
 import clothesImg from '@/assets/img/clothes_logo.png'
-import heatImg from '@/assets/img/heat_logo.jpg'
+import heatImg from '@/assets/img/heat_logo.png'
 import boxImg from '@/assets/img/box_logo.png'
 import sangenImg from '@/assets/img/sangen_logo.png'
 import hurikoImg from '@/assets/img/huriko_logo.png'
