@@ -3,7 +3,7 @@
       <kimiSNav>
         <div class="tab_museum w-4/5 bg-gray-50 p-6 shadow-md mx-auto">
           <div class="flex justify-center items-center space-x-4 my-3">
-            <h1 class="text-4xl font-bold text-center">君もSCをしてみよう</h1>
+            <h1 class="text-4xl font-bold text-center">君もSCをやってみよう</h1>
           </div>
           <div class="content-container flex flex-col items-center w-5/6 mx-auto">
             <p>ここにスプレッドシートから読み込んだ内容を表示します。</p>
@@ -26,7 +26,7 @@ const route = useRoute()
 const path = route.path.split('/').pop()
 
 const { data, pending, error } = await useFetch(
-  'https://script.google.com/macros/s/AKfycbyNW75ocR_nLcIe2jFHUuhLWgwFhkp2APRq4l7V-ImB2GVulfQDwAVO1oI7NXnox8SE/exec',
+  'https://script.google.com/macros/s/AKfycbx0rC51Ph4MXYEhwD6YAKevhGNzgQ-gNvSQ2RQKOrMv6teHDoLibfFhWmldmf0kX-8E/exec',
   {
     params: { path },
     server: false,
