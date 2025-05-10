@@ -22,6 +22,17 @@
           <T :v="schedule.kikakuInfo.description" />
         </p>
       </div>
+
+      <!-- 整理券配布・整列情報 -->
+      <div v-if="schedule.channel === 'atelier'" class="text-sm text-center text-gray-600 mb-2">
+        <div v-if="schedule.ticketDistHour !== undefined && schedule.ticketDistMin !== undefined">
+          整理券配布開始: {{ formatTime(schedule.ticketDistHour, schedule.ticketDistMin) }}
+        </div>
+        <div v-if="schedule.lineUpHour !== undefined && schedule.lineUpMin !== undefined">
+          整列可能: {{ formatTime(schedule.lineUpHour, schedule.lineUpMin) }}
+        </div>
+      </div>
+
       <div 
         v-if="schedule.channel === 'atelier'" 
         class="text-sm font-bold text-center" 
@@ -39,5 +50,12 @@
 
 <script setup lang="ts">
 import T from '@/components/T.vue'
+
 defineProps<{ schedule: any }>()
+
+function formatTime(hour: number, min: number): string {
+  const h = String(hour).padStart(2, '0')
+  const m = String(min).padStart(2, '0')
+  return `${h}:${m}`
+}
 </script>
