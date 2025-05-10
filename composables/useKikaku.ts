@@ -59,7 +59,7 @@ const kikaku: Record<string, Kikaku> = {
     channel: 'atelier',
     url: { name: 'kimiS' },
     image: '/img/thumbnail/kimiS.png',
-    title_short: '君[きみ]S[えす]',
+    title_short: '[君](きみ)[S](えす)',
   },
 }
 
