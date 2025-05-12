@@ -3,7 +3,6 @@ import { defineStore } from 'pinia';
 export const useAtelierStore = defineStore('atelier', {
   state: () => ({
     cards: [
-      { title: '[念力](ねんりき)[振](ふ)り[子](こ)', alt: '念力振り子', content: '[念力](ねんりき)[振](ふ)り[子](こ)に[関](かん)する[説明](せつめい)。', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/A.jpg' },
       { title: '[材料](ざいりょう)', alt: '三原色コップの材料', content: '[三原色](さんげんしょく)コップの[工作](こうさく)に[来](き)た[人](ひと)はここに[載](の)っている[材料](ざいりょう)があるか[確認](かくにん)してください。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/material.jpg' },
       { title: '[電池](でんち)のくみたて', alt: '電池の組み立て1', content: 'まずは[写真](しゃしん)のように、ボタン[電池](でんち)と[LED](えるいーでぃー)をつけていきます。まずはビニールテープを4.5cm[程度](ていど)に[切](き)り、ボタン[電池](でんち)の+[極側](きょくがわ)に[半分](はんぶん)が[隠](かく)れるように[貼](は)ってください。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/set_cell1.jpg' },
       { title: '[電池](でんち)のくみたて', alt: '電池の組み立て2', content: '',page: 'lightcop', img: '/mayfes2025/atelier/lightcop/set_cell2a.jpg' },
@@ -12,7 +11,7 @@ export const useAtelierStore = defineStore('atelier', {
       { title: '', alt: '電池の組み立て5', content: 'ビニールテープの[残](のこ)った[部分](ぶぶん)を[折](お)り[返](かえ)し、LEDを[固定](こてい)します。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/set_cell4.jpg' },
       { title: '[電池](でんち)のくみたて', alt: '電池の組み立て6', content: 'これを3[色](しょく)で[作](つく)ります。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/set_cell5.jpg' },
       { title: 'トレーシングペーパーを[貼](は)る', alt: '電池の組み立て7', content: '[紙](かみ)コップにトレーシングペーパーをセロハンテープで[貼](は)ります。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/paper.jpg' },
-      { title: '[紙](かみ)コップに[LED](えるいーでぃー)をつける', alt: '電池の組み立て8', content: '[電池](でんち)の-[極側](きょくがわ)に[丸](まる)めたセロハンテープをつけ、[紙](かみ)コップに3つが[等間隔](とうかんかく)になるように[貼](は)ります。[緑](みどり)を[少](すこ)しだけコップの[底寄](そこよ)りに[貼](は)って[完成](かんせい)です。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/cell_paper.jpg' },
+      { title: '[紙](かみ)コップに[LED](えるいーでぃー)をつける', alt: '電池の組み立て8', content: '[電池](でんち)の-[極側](きょくがわ)に[丸](まる)めたセロハンテープをつけ、[紙](かみ)コップに3つが[等間隔](とうかんかく)になるように[貼](は)ります。[緑](みどり)を[少](すこ)しだけコップの[底寄](そこよ)りに[貼](は)って[完成](かんせい)です。', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/set_paper.jpg' },
       { title: '[三原色](さんげんしょく)[コップ](こっぷ)', alt: '三原色コップ', content: '[LED](えるいーでぃー)の[足](あし)の[部分](ぶぶん)を[押](お)すと、その[LED](えるいーでぃー)が[光](ひか)ります。[光](ひかり)を[混](ま)ぜるときは[何色](なんしょく)か[同時](どうじ)に[押](お)してみましょう。その[状態](じょうたい)でコップの[底](そこ)のほうから[見](み)てみましょう！', page: 'lightcop', img: '/mayfes2025/atelier/lightcop/finish.jpg' },
       { title: '[材料](ざいりょう)', alt: '光の箱', content: '[光](ひかり)の[箱](はこ)の[工作](こうさく)に[来](き)た[人](ひと)はここに[載](の)っている[材料](ざいりょう)があるか[確認](かくにん)してください。', page: 'box', img: '/mayfes2025/atelier/box/material.jpeg' },
       { title: '[工作用紙](こうさくようし)で[筒](つつ)を[作](つく)る', alt: '光の箱', content: '[折](お)り[線](せん)に[沿](そ)って[工作用紙](こうさくようし)のマス[目](め)が[見](み)えるように[山折](やまお)りをしてください。最後は両面テープを剥がしてくっつけてください。', page: 'box', img: '/mayfes2025/atelier/box/pipe.jpeg' },
@@ -22,6 +21,13 @@ export const useAtelierStore = defineStore('atelier', {
       { title: '[銀紙](ぎんがみ)を[箱](はこ)に[敷](し)き[詰](つ)める', alt: '光の箱', content: '', page: 'box', img: '/mayfes2025/atelier/box/box_in.jpeg' },
       { title: 'カラーセロハンで[蓋](ふた)をする', alt: '光の箱', content: '4[枚](まい)のカラーセロハンで[全面](ぜんめん)を[覆](おお)うことができるように[蓋](ふた)をする。カラーセロハンを[重](かさ)ねてみると[色](いろ)が[混](ま)ざって[面白](おもしろ)い[色](いろ)ができるよ！', page: 'box', img: '/mayfes2025/atelier/box/paper_set.jpeg' },
       { title: '[完成](かんせい)', alt: '光の箱', content: '', page: 'box', img: '/mayfes2025/atelier/box/finish.jpeg' },
+      { title: '[材料](ざいりょう)', alt: '念力振り子', content: '[念力振](ねんりきふ)り[子](こ)コップの[工作](こうさく)に[来](き)た[人](ひと)はここに[載](の)っている[材料](ざいりょう)があるか[確認](かくにん)してください。', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/material.jpg' },
+      { title: 'ストローに[糸](いと)を[通](とお)す', alt: '念力振り子', content: '', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/through.jpg' },
+      { title: '', alt: '念力振り子', content: 'タピオカストローに、ひもを3[本通](ぼんとお)します。この[時](とき)3[本同時](ぼんどうじ)に[通](とお)すとやりやすいです。', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/pene.jpg' },
+      { title: 'ひもを[結](むす)ぶ', alt: '念力振り子', content: 'ひもの[両端](りょうたん)を[結](むす)びます。ひもの[端](はし)が[同](おな)じ[色](いろ)のもの[同士](どうし)をかたむすびしてください。', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/tie.jpg' },
+      { title: 'ストローに[糸](いと)を[通](とお)す', alt: '念力振り子', content: '', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/guruguru_1.jpg' },
+      { title: '', alt: '念力振り子', content: 'セロハンテープを[巻](ま)き[付](つ)けて、ビー[玉](だま)を[紐](ひも)に[固定](こてい)します。2[回転目安](かいてんめやす)です。', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/guruguru_2.jpg' },
+      { title: '[完成](かんせい)', alt: '念力振り子', content: '', page: 'pendulum', img: '/mayfes2025/atelier/pendulum/finish.jpg' },
     ],
   }),
 });

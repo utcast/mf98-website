@@ -54,7 +54,7 @@ const kikaku: Record<string, Kikaku> = {
   },
   kimiS: {
     title: '[君](きみ)も[SC](えすしー)をやってみよう',
-    description: '[SC](えすしー)の[楽](たの)しさを[体験](たいけん)しよう！',
+    description: '[一緒](いっしょ)に[実験](じっけん)やってみよう！',
     color: 'zoom',
     channel: 'atelier',
     url: { name: 'kimiS' },
