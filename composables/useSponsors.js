@@ -10,13 +10,13 @@ export const useSponsors = () => {
     },
     {
       name: '日本出版販売株式会社',
-      image: '/mayfes2025/kyosan/日本出版販売株式会社_ロゴ_24駒場祭 (1).png',
+      image: '/mayfes2025/kyosan/nippan.png',
       link: 'https://www.nippan.co.jp',
       weight: 1
     },
     {
       name: '株式会社 少年写真新聞社',
-      image: '/mayfes2025/kyosan/少年写真.png',
+      image: '/mayfes2025/kyosan/shonen.png',
       link: 'https://www.schoolpress.co.jp',
       weight: 0.5
     },
@@ -58,19 +58,19 @@ export const useSponsors = () => {
     },
     {
       name: '社会福祉法人草萠学舎 西国立保育園',
-      image: '/mayfes2025/kyosan/CAST駒場祭_社会福祉法人草萠学舎 西国立保育園_ロゴ.png',
+      image: '/mayfes2025/kyosan/nishikunitachi.png',
       link: 'https://sohogakusha.jp/2492/',
       weight: 3
     },
     {
       name: '一般社団法人理系女子未来創造プロジェクト',
-      image: '/mayfes2025/kyosan/理系女子未来創造プロジェクト様.png',
+      image: '/mayfes2025/kyosan/jo.png',
       link: 'https://rikejocafe.jp',
       weight: 1
     },
     {
       name: '株式会社アルファ企画',
-      image: '/mayfes2025/kyosan/株式会社アルファ企画_ロゴ.png',
+      image: '/mayfes2025/kyosan/alpha.png',
       link: 'http://shibuya.pandastudio.tv',
       weight: 1
     }

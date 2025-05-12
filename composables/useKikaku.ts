@@ -53,8 +53,8 @@ const kikaku: Record<string, Kikaku> = {
     title_short: '[念力振](ねんりきふ)り[子](こ)',
   },
   kimiS: {
-    title: '君[きみ]もSC[えすしー]をやってみよう',
-    description: 'SC[えすしー]の[楽](たの)しさを[体験](たいけん)しよう！',
+    title: '[君](きみ)も[SC](えすしー)をやってみよう',
+    description: '[SC](えすしー)の[楽](たの)しさを[体験](たいけん)しよう！',
     color: 'zoom',
     channel: 'atelier',
     url: { name: 'kimiS' },
