@@ -15,7 +15,7 @@ const { sponsors } = useSponsors()
         </div>
     </div>
     <div class="title-triangle">
-      <TitleTriangle title="ご協賛企業様" position="right" />
+      <TitleTriangle title="ご[協賛企業様](きょうさんきぎょうさま)" position="right" />
     </div>
   </div>
 </template>
