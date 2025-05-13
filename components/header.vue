@@ -78,8 +78,8 @@ const toggleMenu = () => {
 
       <div class="toggle-buttons flex flex-col items-center gap-1">
         <div class="label text-white text-xs">ふりがな</div>
-        <div class="toggle-button py-1 px-2 rounded cursor-pointer bg-blue-700 text-white" :class="{ 'bg-white text-blue-700': rubyVisible }" @click="toggleFurigana(true)">あり</div>
-        <div class="toggle-button py-1 px-2 rounded cursor-pointer bg-blue-700 text-white" :class="{ 'bg-white text-blue-700': !rubyVisible }" @click="toggleFurigana(false)">なし</div>
+        <div class="toggle-button py-1 px-2 rounded cursor-pointer bg-blue-300 text-white" :class="{ 'bg-blue-700 text-blue-700': rubyVisible }" @click="toggleFurigana(true)">あり</div>
+        <div class="toggle-button py-1 px-2 rounded cursor-pointer bg-blue-300 text-white" :class="{ 'bg-blue-700 text-blue-700': !rubyVisible }" @click="toggleFurigana(false)">なし</div>
       </div>
       <div class="menu-icon flex flex-col cursor-pointer md:hidden" @click="toggleMenu">
         <span class="bg-white h-0.5 w-6 my-1"></span>
