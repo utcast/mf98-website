@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     // ページトランジションの設定を追加
     pageTransition: {
       name: 'page',
-      mode: 'out-in',
+      // mode: 'out-in',なんかこれがあるとslotが表示されないことがある
     },
   },
 

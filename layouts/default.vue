@@ -3,7 +3,8 @@
   <main class="default-background">
     <slot />
   </main>
-  <component :is="kyosanComponent" /> <!-- 動的にコンポーネントを切り替える -->
+  <component :is="kyosanComponent" /> 
+  <!-- 動的にコンポーネントを切り替える -->
   <Footer />
 </template>
 
