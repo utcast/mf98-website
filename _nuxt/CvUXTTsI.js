@@ -1,0 +1,1 @@
+import{_ as t}from"./BZqv0oTl.js";import{u as o,c as r,a,o as s}from"./DIOvBtf6.js";const i={__name:"index",setup(n){return o().replace({name:"en-museum-heat"}),(c,e)=>(s(),r("div",null,e[0]||(e[0]=[a("img",{src:t,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{i as default};
