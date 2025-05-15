@@ -1,0 +1,1 @@
+import{_ as t}from"./D3WKes2Q.js";import{u as o,c as r,a,o as s}from"./B-8mnVSS.js";const i={__name:"index",setup(n){return o().replace({name:"museum-heat"}),(c,e)=>(s(),r("div",null,e[0]||(e[0]=[a("img",{src:t,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{i as default};
