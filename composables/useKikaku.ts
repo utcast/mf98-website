@@ -13,6 +13,9 @@ export interface Kikaku {
   url?: { name: string };
   image?: string;
   title_short?: string;
+  title_en?: string;
+  description_en?: string;
+  title_short_en?: string;
 }
 
 const kikaku: Record<string, Kikaku> = {
@@ -24,6 +27,9 @@ const kikaku: Record<string, Kikaku> = {
     url: { name: 'kaiten' },
     image: '/img/thumbnail/kaiten.png',
     title_short: '[回転](かいてん)ショー',
+    title_en: 'Rotation Show',
+    description_en: 'Let\'s discover the mysteries hidden in everyday "rotation"!',
+    title_short_en: 'Rotation Show',
   },
   hikari: {
     title: '[光](ひかり)の[箱](はこ)',
@@ -33,15 +39,21 @@ const kikaku: Record<string, Kikaku> = {
     url: { name: 'hikari' },
     image: '/img/thumbnail/hikari.png',
     title_short: '[光](ひかり)の[箱](はこ)',
+    title_en: 'Box of Light',
+    description_en: 'Sparkling when lit? Make a colorful box to explore the science of reflection!',
+    title_short_en: 'Light Box',
   },
   san_gen: {
     title: '[三原色](さんげんしょく)コップ',
-    description: '[手元](てもと)で[光](ひかり)を[混](ま)ぜられる！？コップを[作](つく)って[光](ひかり)の[三原色](さんげんしょく)について[知](し)ろう！',
+    description: '[手元](てもと)で[光](ひかり)を[混](ま)ぜられる！？コップを[作](つく)って[光](ひか)りの[三原色](さんげんしょく)について[知](し)ろう！',
     color: 'zoom',
     channel: 'atelier',
     url: { name: 'san_gen' },
     image: '/img/thumbnail/san_gen.png',
     title_short: '[三原色](さんげんしょく)コップ',
+    title_en: 'Primary Colors Cup',
+    description_en: 'Mix light with your hands? Make a cup and learn about the primary colors of light!',
+    title_short_en: 'Colors Cup',
   },
   nenriki: {
     title: '[念力振](ねんりきふ)り[子](こ)',
@@ -51,6 +63,9 @@ const kikaku: Record<string, Kikaku> = {
     url: { name: 'nenriki' },
     image: '/img/thumbnail/nenriki.png',
     title_short: '[念力振](ねんりきふ)り[子](こ)',
+    title_en: 'Telekinetic Pendulum',
+    description_en: 'Control the swing with your mind? Build a swaying craft and explore pendulums!',
+    title_short_en: 'Pendulum',
   },
   kimiS: {
     title: '[君](きみ)も[SC](えすしー)をやってみよう',
@@ -60,7 +75,8 @@ const kikaku: Record<string, Kikaku> = {
     url: { name: 'kimiS' },
     image: '/img/thumbnail/kimiS.png',
     title_short: '[君](きみ)[S](えす)',
+    title_en: 'Try SC Experiments!',
+    description_en: 'Let’s do science experiments together!',
+    title_short_en: 'Try SC!',
   },
 }
-
-
