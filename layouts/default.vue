@@ -1,33 +1,55 @@
 <template>
-  <Header />
+  <component :is="HeaderComp" />
   <main class="default-background">
     <slot />
   </main>
-  <component :is="kyosanComponent" /> <!-- 動的にコンポーネントを切り替える -->
-  <Footer />
+  <!-- Use KyosanAll for the home page, otherwise use KyosanRand -->
+  <component :is="kyosanComponent" />
+  <!-- Conditionally selected footer -->
+  <component :is="FooterComp" />
 </template>
 
 <script>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import Header from '~/components/header.vue'
-import KyosanAll from '~/components/kyosan_all.vue' // kyosan_all.vue をインポート
-import KyosanRand from '~/components/kyosan_rand.vue' // kyosan_rand.vue をインポート
-import Footer from '~/components/footer.vue'
+
+// Import Header components (language-specific)
+import HeaderJa from '~/components/header.vue'
+import HeaderEn from '~/components/en/header.vue'
+
+// Import Kyosan components
+import KyosanAllJa from '~/components/kyosan_all.vue'
+import KyosanAllEn from '~/components/en/kyosan_all.vue'
+import KyosanRand from '~/components/kyosan_rand.vue'
+
+// Import Footer components (language-specific)
+import FooterJa from '~/components/footer.vue'
+import FooterEn from '~/components/en/footer.vue'
 
 export default {
-  components: {
-    Header,
-    Footer
-  },
   setup() {
     const route = useRoute()
+    const isEnglish = computed(() => route.path.includes('/en'))
+    
+    // Select the proper Header component based on the URL.
+    const HeaderComp = computed(() => isEnglish.value ? HeaderEn : HeaderJa)
+    
+    // Use KyosanAll for home page; choose language-specific KyosanAll based on the URL.
     const kyosanComponent = computed(() => {
-      return route.path === '/' ? KyosanAll : KyosanRand
+      const isHome = route.path === '/' || route.path === '/en' || route.path === '/en/'
+      if (isHome) {
+        return isEnglish.value ? KyosanAllEn : KyosanAllJa
+      }
+      return KyosanRand
     })
-
+    
+    // Conditionally select the Footer component.
+    const FooterComp = computed(() => isEnglish.value ? FooterEn : FooterJa)
+    
     return {
-      kyosanComponent
+      HeaderComp,
+      kyosanComponent,
+      FooterComp
     }
   }
 }

@@ -11,7 +11,7 @@
         </li>
         <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'heat' }">
           <nuxt-link to="/museum/heat" class="tab-youtube" :class="[tabActive === 'heat' ? 'tab-active' : 'tab-inactive']">
-            <T v="[熱](ねつ)ブース"></T> 
+            <T v="[熱](ねつ)と[電気](でんき)ブース"></T> 
           </nuxt-link>
         </li>
         <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'pen' }">

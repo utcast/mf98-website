@@ -63,6 +63,29 @@ const openModal = (schedule: ScheduleWithInfo) => {
 <template>
   <div class="overflow-x-auto">
     <div class="min-w-[800px] overflow-y-auto border" style="height: 800px;">
+      <!-- 表頭 -->
+<div class="grid" :style="`grid-template-columns: 80px repeat(4, 1fr)`">
+  <!-- 時間 -->
+  <div class="border-b border-r row-span-2 flex items-center justify-center text-xs font-bold">
+    時間
+  </div>
+
+  <!-- 1日目（2列分） -->
+  <div class="col-span-2 border-b border-r text-center text-xs font-bold  bg-blue-500 text-white">
+    1日目
+  </div>
+  <!-- 2日目（2列分） -->
+  <div class="col-span-2 border-b text-center text-xs font-bold  bg-blue-500 text-white">
+    2日目
+  </div>
+
+  <!-- ショー・アトリエ -->
+  <div class="border-r text-center text-xs  bg-blue-500 text-white">ショー</div>
+  <div class="border-r text-center text-xs  bg-blue-500 text-white">アトリエ</div>
+  <div class="border-r text-center text-xs  bg-blue-500 text-white">ショー</div>
+  <div class="text-center text-xs  bg-blue-500 text-white">アトリエ</div>
+</div>
+
       <div class="grid" :style="`grid-template-columns: 80px repeat(4, 1fr)`">
 
         <!-- 時間軸 -->
@@ -98,7 +121,9 @@ const openModal = (schedule: ScheduleWithInfo) => {
             :style="`top: ${calcPosition(schedule)}px; height: ${calcHeight(schedule)}px; left: 4px; right: 4px;`"
             @click="openModal(schedule)"
           >
-            <div class="font-bold text-[9px]">{{ schedule.kikakuInfo.title_short }}</div>
+            <div class="font-bold text-[9px]">
+              <T :v="schedule.kikakuInfo.title_short" />
+            </div>
             <div class="text-[8px]">{{ schedule.startHour }}:{{ ('0' + schedule.startMin).slice(-2) }} 〜 {{ schedule.endHour }}:{{ ('0' + schedule.endMin).slice(-2) }}</div>
           </div>
         </div>
