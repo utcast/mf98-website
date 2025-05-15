@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h1 class="font-bold border-b"><T :v="title" /></h1>
+    <h1 class="font-bold border-b"><T :v="title_en" /></h1>
     <img :src="img" :alt="alt" class="card-image" />
-    <p><T :v="content" /></p>
+    <p><T :v="content_en" /></p>
   </div>
 </template>
 
@@ -10,8 +10,8 @@
 import T from '~/components/T.vue';
 
 defineProps({
-  title: String,
-  content: String,
+  title_en: String,
+  content_en: String,
   img: String,
   alt: String,
 });

@@ -11,8 +11,8 @@
         <div class="card-container flex flex-col items-center w-5/6 mx-auto">
           <Card v-for="(card, index) in filteredCards" 
                 :key="index" 
-                :title="card.title" 
-                :content="card.content" 
+                :title_en="card.title_en" 
+                :content_en="card.content_en" 
                 :img="card.img" 
                 class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-300 hover:shadow-xl transition-all mx-auto p-6" />
         </div>
