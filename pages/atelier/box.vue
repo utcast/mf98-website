@@ -5,7 +5,7 @@
         <div class="flex justify-center items-center space-x-4 my-3">
           <img src="@/assets/img/box_logo.png" alt="光の箱ロゴ" class="object-contain h-11" />
           <h1 class="text-4xl font-bold text-center">
-            <T :v="`光の箱`" />
+            <T :v="`[光](ひかり)の[箱](はこ)`" />
           </h1>
         </div>
         <div class="card-container flex flex-col items-center w-5/6 mx-auto">

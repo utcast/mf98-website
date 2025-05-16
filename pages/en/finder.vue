@@ -4,20 +4,20 @@
     <img src="@/assets/img/confetti-25.gif" alt="Confetti">
   </div>
   <h2 class="bg-white text-center">
-    <T :v="`レベル1クリアおめでとう！今埋めたのは...？`" />
+    <T :v="`Congratulations on clearing level 2! What you just filled in is ...`" />
   </h2>
   <div>
     <!-- triangle container -->
     <div class="triangle-container">
-      <TitleTriangle title="ファインダパターン" position="left" />
+      <TitleTriangle title="Finder Patterns" position="left" />
       <div class="iframe-container">
-        <img src="@/assets/img/QR/finder.png" alt="ファインダパターン" class="responsive-iframe">
+        <img src="@/assets/img/QR/finder.png" alt="Finder Patterns" class="responsive-iframe">
       </div>
     </div>
   </div>
   <!-- 空のボックス -->
   <div class="empty-box"></div>
-  <T :v="`[QR](きゅーあーる)コードの3[隅](すみ)にある[正方形](せいほうけい)の[形](かたち)をした[模様](もよう)は、ファインダパターンという[名前](なまえ)がついています。このファインダパターンのおかげで、[機械](きかい)は[QR](きゅーあーる)コードがどこにあるかを[認識](にんしき)しています。ちなみに、ファインダパターンの[外側](そとがわ)の[正方形](せいほうけい)の[一辺](いっぺん)は7マス、[内側](うちがわ)の[正方形](せいほうけい)の[一辺](いっぺん)は3マスと[決](き)まっています。これは、[QR](きゅーあーる)コードを[発明](はつめい)した[原昌宏](はらまさひろ)さんが、ありとあらゆる[印刷物](いんさつぶつ)を[調](しら)べ[上](あ)げた[結果](けっか)、[出現頻度](しゅつげんひんど)が[極](きわ)めて[小](ちい)さかったのがこの[模様](もよう)だったためだそう。`" />
+  <T :v="`The square-shaped pattern in the three corners of the QR Code is called a finder pattern. Thanks to this finder pattern, the machine recognizes where the QR Code is located. Incidentally, one side of the outer square of the finder pattern has 7 squares, and one side of the inner square has 3 squares. The reason for this is that Masahiro Hara, the inventor of the QR Code, investigated all kinds of printed matter and found that this pattern appeared very infrequently.<br>`" />
 
 
 
