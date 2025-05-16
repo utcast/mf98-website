@@ -17,65 +17,64 @@
     </div>
     <!-- 空のボックス -->
     <div class="empty-box"></div>
-    <T :v="`　QRコードを読み取ると、多くの場合はWebページに遷移すると思います。これは、QRコードの中にWebページのURLが書き込まれているから。このページのURL、https://ut-cast.net/mayfes2025/data/が、今読み取ったQRコードの中に書き込まれていたんです。レベル4では、URLのなかにあるcastの部分を穴埋めしてもらいました。<br>
+    <T :v="`　When you read a QR code, you will be redirected to a web page in many cases. This is because the URL of the web page is written in the QR code. The URL of this page, https://ut-cast.net/mayfes2025/data/, was written in the QR code that was just scanned. In level 4, I asked the students to fill in the cast part in the url. <br>
 
 `" />
     <div>
         <div class="triangle-container">
-        <TitleTriangle title="読み取り順" position="left" />
+        <TitleTriangle title="sequential order of reading" position="left" />
         <div class="iframe-container">
-          <img src="@/assets/img/QR/QR_order.png" alt="読み取り順" class="responsive-iframe">
+          <img src="@/assets/img/QR/QR_order.png" alt="sequential order of reading" class="responsive-iframe">
         </div>
       </div>
     </div>
     <div class="empty-box"></div>
-    <T :v="`　QRコードには、上の画像のような順番でデータが入っています。横2マスずつ、右から上下上下といった順番です。このとき、レベル1～3で紹介したパターンやフォーマット情報はよけながら読んでいきます。マス目を読む順番を詳しく見ていくと、下の画像のようになります。<br>
+    <T :v="`　The QR Code contains data in the order shown in the image above. The order is two horizontal squares each, from right to left, up to down, up to down, and so on. At this point, the patterns and formatting information introduced in Levels 1 to 3 are read while bypassing them. The order in which the squares are read in detail is shown in the image below. <br>
 `" />
     <div>
         <div class="triangle-container">
-        <TitleTriangle title="マス目の読み方" position="left" />
+        <TitleTriangle title="How to read the squares" position="left" />
         <div class="iframe-container">
-          <img src="@/assets/img/QR/QR_masume.png" alt="マス目の読み方" class="responsive-iframe">
+          <img src="@/assets/img/QR/QR_masume.png" alt="How to read the squares" class="responsive-iframe">
         </div>
       </div>
     </div>
     <div class="empty-box"></div>
-    <T :v="`　上に向かって読むときも、下に向かって読むときも、横幅2マスのうち、右から順につづら折りに読んでいきます。<br>
-　次は、データの中身を見ていきましょう。データ部分を分けていくと、下の画像のようになります。<br>
+    <T :v="`　When reading upwards or downwards, the two horizontal squares are read from right to left in a spacing of two squares.<br>
+　Next, let's look at the data. If we separate the data section, it will look like the image below.<br>
 
 `" />
     <div>
         <div class="triangle-container">
-        <TitleTriangle title="データのなかみ" position="left" />
+        <TitleTriangle title="meaning of data" position="left" />
         <div class="iframe-container">
-          <img src="@/assets/img/QR/QR_data_inside.png" alt="データのなかみ" class="responsive-iframe">
+          <img src="@/assets/img/QR/QR_data_inside.png" alt="meaning of data" class="responsive-iframe">
         </div>
       </div>
     </div>
     <div class="empty-box"></div>
-    <T :v="`　データの最初にあたる、右下にある青色線に囲まれた4マスは、モード指示子というものです。この4マスのマスクを外すと、白黒白白となります。これは、このQRコードのデータが8ビットバイトモードで書かれていることを意味します。8ビットバイトモードというのは8マスで1文字を表すモードのことで、URLをQRコードに書くときは、この8ビットバイトモードが使われます。<br>
-　モード指示子の次にある、緑色線に囲まれた8マスは、文字数指示子というものです。名前の通り、URLの文字数を表しています。マスクを外すと、白白黒白白黒白白になります。これは2進数という数になっていて、私たちの見慣れた10進数に直してあげると、36になり、このページのURLの文字数と一致しているのがわかります。<br>
-　文字数指示子の後に続く、灰色の線で囲まれた8マスはすべて、URLの一文字一文字を表しています。8ビットバイトモードのとき、アルファベットのa~zは下の表のようにあらわされます。<br>
-
+    <T :v="`　The four squares surrounded by blue lines in the lower right corner at the beginning of the data are called mode indicators. When these four squares are unmasked, they become black-and-white and white-and-white. This means that the QR Code data is written in 8-bit byte mode, which is the mode in which 8 squares represent one character. 8-bit byte mode is used when writing url in QR Code. <br>
+　The eight squares surrounded by green lines next to the mode indicator are called character count indicators. As the name suggests, it indicates the number of characters in the url. When unmasked, they are white-white-black-white-black-white. This is a binary number, and if we convert it to the decimal number we are familiar with, we see that it is 36, which matches the number of characters in the url for this page. <br>
+　In 8-bit byte mode, the letters a~z in the alphabet are represented as in the table below. <br>
 `" />
     <div>
         <div class="triangle-container">
-        <TitleTriangle title="QRアルファベット変換表" position="left" />
+        <TitleTriangle title="QR Alphabet Conversion Table" position="left" />
         <div class="iframe-container">
-          <img src="@/assets/img/QR/QR_alpha.png" alt="QRアルファベット変換表" class="responsive-iframe">
+          <img src="@/assets/img/QR/QR_alpha.png" alt="QR Alphabet Conversion Table" class="responsive-iframe">
         </div>
       </div>
     </div>
     <div class="empty-box"></div>
-    <T :v="`　表の2列目にある数字は、8マスがあらわす2進数を10進数に直したものです。URLに使われている文字は、アルファベットのほかにも、ハイフンは45、ピリオドは46、スラッシュ(/)は47、数字の0~9は48~57、コロン(:)は58と割り当てられています。<br>
-　URLの文字が終わった後にある、黄色く囲まれた4マスは、マスクを外すと、白白白白となります。これは終端パターンと言って、URLの文字がここで終わりになることを示しています。<br>
-　終端パターンの後にある、赤く囲まれたマスは、マスクを外すと、黒黒黒白黒黒白白白白白黒白白白黒という16マス分のパターンがずっと続いています。このパターンは埋め草ワードと呼ばれ、QRコードのデータの余った部分を埋める役割をしています。<br>
-　ここまでかなり長くなりましたが、QRコードのデータ部分を解説してきました。ここまで読めた方は、ぜひレベル5にも挑戦してみてください！<br>
+    <T :v="`The numbers in the second column of the table are the decimal equivalents of the binary numbers represented by the 8 squares; in addition to the alphabet, the characters used for url are assigned as follows: hyphen, 45; period, 46; slash (/), 47; numbers 0~9, 48~57; colon (:), 58. <br>
+　The four squares surrounded by yellow after the end of the url character are white-white-white-white when the mask is unmasked. This is a termination pattern, indicating that the url character ends here. <br>
+　The squares enclosed in red after the terminal pattern, when unmasked, continue the pattern for 16 squares: black-black-black-black-white-black-white-white-white-black. This pattern is called a fill-in-the-blank word, and it fills in the excess QR Code data. <br>
+　This has been a rather lengthy explanation of the data portion of the QR Code. If you have been able to read this far, please try level 5! <br>
 
 `" />
   
   
-    <small>QRコードは株式会社デンソーウェーブの登録商標です。</small>
+    <small>QR Code is a registered trademark of DENSO WAVE.</small>
   
   </template>
   
