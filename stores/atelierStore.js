@@ -118,7 +118,7 @@ export const useAtelierStore = defineStore('atelier', {
         alt: '光の箱',
         content: '4[枚](まい)のカラーセロハンで[全面](ぜんめん)を[覆](おお)うことができるように[蓋](ふた)をする。カラーセロハンを[重](かさ)ねてみると[色](いろ)が[混](ま)ざって[面白](おもしろ)い[色](いろ)ができるよ！',
         page: 'box',
-        img: '/mayfes2025/atelier/box/paper_set.jpeg' },
+        img: '/mayfes2025/atelier/box/color.jpeg' },
       { title: '[完成](かんせい)',
         alt: '光の箱',
         content: '',
