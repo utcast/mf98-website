@@ -39,10 +39,7 @@
           <span class="text-xs bg-red-600 text-white mx-2 p-1 rounded">Sun</span>
         </div>
         <div>
-          <T v="We have"></T>
-          <T v="Science Museum"></T>
-          <T v="Science Show"></T>
-          <T v="Science Atelier"></T>
+          <T v="We have Science Museum, Science Show, and Science Atelier!"></T>
         </div>
       </div>
     </div>

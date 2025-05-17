@@ -11,6 +11,7 @@
       <div class="triangle-container">
         <TitleTriangle title="この画面をCASTの人に見せると..." position="left" />
         <div class="iframe-container">
+          <img src="@/assets/img/QR/mission_complete.jpg" alt="data" class="responsive-iframe">
         </div>
       </div>
     </div>

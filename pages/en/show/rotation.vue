@@ -5,7 +5,7 @@
         <div class="flex justify-center item-center space-x-4 my-3">
           <img src="@/assets/img/rotation_logo.png" alt="回転ショーロゴ" class="object-contain h-11" />
           <h1 class="text-4xl font-bold text-center">
-            <T :v="`Rotttation Show`" />
+            <T :v="`Rotation Show`" />
           </h1>
         </div>
         <div class="card-container flex flex-col items-center w-5/6 mx-auto">

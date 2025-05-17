@@ -11,6 +11,7 @@
       <div class="triangle-container">
         <TitleTriangle title="Show this screen to a CAST member..." position="left" />
         <div class="iframe-container">
+          <img src="@/assets/img/QR/mission_complete.jpg" alt="data" class="responsive-iframe">
         </div>
       </div>
     </div>
