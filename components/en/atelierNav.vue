@@ -2,6 +2,9 @@
   <div class="museum-nav atelier-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
     <!-- ロゴ画像を表示 -->
     <img src="@/assets/img/atelier_logo.png" alt="atelier logo" class="mx-auto h-16 mb-6" />
+    <a href="https://gogatsusai.jp/98/visitor/en/project/002" target="_blank" class="text-blue-600 underline block mb-6">
+      Click here for the official May Festival voting page (Science Atelier)!
+    </a>
  
       <nav class="my-4 justify-center">
         <ul class="w-4/5 flex  justfy-center items-center mx-auto">

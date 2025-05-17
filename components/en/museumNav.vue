@@ -2,6 +2,9 @@
   <div class="museum-nav bg-white shadow-lg p-4 text-center mx-auto max-w-6xl">
     <!-- ロゴ画像を表示 -->
     <img src="@/assets/img/museum_logo.png" alt="Museum Logo" class="mx-auto h-16 mb-6" />
+    <a href="https://gogatsusai.jp/98/visitor/en/project/007" target="_blank" class="text-blue-600 underline block mb-6">
+      Click here for the official May Festival voting page (Science Museum)!
+    </a>
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justfy-center items-center mx-auto">
         <li class="bg-gray-50" :class="{ 'tab-active-li': tabActive === 'clothes' }">

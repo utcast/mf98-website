@@ -2,6 +2,9 @@
   <div class="museum-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
     <!-- ロゴ画像を表示 -->
     <img src="@/assets/img/show_logo.png" alt="Show Logo" class="mx-auto h-16 mb-6" />
+    <a href="https://gogatsusai.jp/98/visitor/en/project/005" target="_blank" class="text-blue-600 underline block mb-6">
+      Click here for the official May Festival voting page (Science Show)!
+    </a>
     <nav class="my-4 justify-center">
       <ul class="w-4/5 flex justify-center mx-auto">
         <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === 'rotation' }">
