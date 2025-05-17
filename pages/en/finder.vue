@@ -21,7 +21,7 @@
 
 
 
-  <small>QRコードは株式会社デンソーウェーブの登録商標です。</small>
+  <small>QR Code is a registered trademark of DENSO WAVE.</small>
 
 </template>
 
