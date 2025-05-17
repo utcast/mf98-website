@@ -1,7 +1,7 @@
 <template>
     <div class="museum-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
       <!-- ロゴ画像を表示 -->
-      <h1 class="text-4xl font-bold text-center">君もSCをやってみよう</h1>
+      <h1 class="text-4xl font-bold text-center">Let's do science communication with us!</h1>
             <nav class="my-4 justify-center">
         <ul class="w-4/5 flex justify-center mx-auto">
           <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === '1_1' }">

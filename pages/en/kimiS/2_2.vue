@@ -3,14 +3,13 @@
     <kimiSNav>
       <div class="tab_museum w-4/5 bg-gray-50 p-6 shadow-md mx-auto">
         <div class="flex justify-center items-center space-x-4 my-3">
-          <h1 class="text-4xl font-bold text-center">君もSCをやってみよう</h1>
+          <h1 class="text-4xl font-bold text-center">Let's do science communication with us!</h1>
         </div>
         <div class="content-container flex flex-col items-center w-5/6 mx-auto">
-          <p>ここにスプレッドシートから読み込んだ内容を表示します。</p>
           <div>
-            <h2>当選番号一覧（{{ data?.path }}）</h2>
+            <h2>List of Winning Numbers（{{ data?.path }}）</h2>
             <ul>
-              <li v-for="num in data?.winners" :key="num">番号: {{ num }}</li>
+              <li v-for="num in data?.winners" :key="num">Number: {{ num }}</li>
             </ul>
           </div>
         </div>

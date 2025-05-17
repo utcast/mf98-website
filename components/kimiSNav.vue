@@ -1,8 +1,12 @@
 <template>
     <div class="museum-nav bg-white shadow-lg p-4 text-center max-w-6xl mx-auto">
-      <!-- ロゴ画像を表示 -->
+      <!-- タイトル -->
       <h1 class="text-4xl font-bold text-center">君もSCをやってみよう</h1>
-            <nav class="my-4 justify-center">
+      <!-- 英語版へのリンク -->
+      <nuxt-link to="/en/kimiS" class="text-blue-600 underline block my-4">
+        English version of this page is here.
+      </nuxt-link>
+      <nav class="my-4 justify-center">
         <ul class="w-4/5 flex justify-center mx-auto">
           <li class="mr-5 bg-gray-50" :class="{ 'tab-active-li': tabActive === '1_1' }">
             <nuxt-link to="/kimiS/1_1" class="tab-youtube" :class="[tabActive === '1_1' ? 'tab-active' : 'tab-inactive']">

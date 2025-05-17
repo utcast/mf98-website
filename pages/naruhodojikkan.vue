@@ -3,6 +3,9 @@
     <div v-if="showConfetti" class="confetti-overlay">
       <img src="@/assets/img/confetti-25.gif" alt="Confetti">
     </div>
+    <nuxt-link to="/en/naruhodojikkan" class="text-blue-600 underline block my-4">
+        English version of this page is here.
+    </nuxt-link>
     <h2 class="bg-white text-center">
       <T :v="`レベル5クリアおめでとう！`" />
     </h2>

@@ -6,7 +6,6 @@
             <h1 class="text-4xl font-bold text-center">君もSCをやってみよう</h1>
           </div>
           <div class="content-container flex flex-col items-center w-5/6 mx-auto">
-            <p>ここにスプレッドシートから読み込んだ内容を表示します。</p>
             <div>
               <h2>当選番号一覧（{{ data?.path }}）</h2>
               <ul>
