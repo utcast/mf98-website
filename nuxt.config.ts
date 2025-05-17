@@ -30,6 +30,13 @@ export default defineNuxtConfig({
 
   // Tailwind CSS の設定を追加
   modules: [
+    [
+      '@nuxtjs/google-gtag',
+      {
+        id: 'G-6CJF0XGKWG', //あなたのGoogleアナリティクスのプロパティID
+        debug: true //本番環境以外でもGAを有効にしたい場合はtrueに。
+      }
+    ],
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
