@@ -30,12 +30,6 @@ export default defineNuxtConfig({
 
   // Tailwind CSS の設定を追加
   modules: [
-    ['nuxt-gtag', {
-      gtag: {
-        // 測定ID
-        id: 'G-6CJF0XGKWG'
-      }
-    }],
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
   ],
