@@ -159,7 +159,7 @@ export const useAtelierStore = defineStore('atelier', {
         img: '/mayfes2025/atelier/pendulum/tie.jpg',
         title_en: 'Tie the string',
         content_en: 'Tie the string. Tie the ends of the string together.' },
-      { title: 'ストローに[糸](いと)を[通](とお)す',
+      { title: 'ビー[玉](だま)とひもをくっつける',
         alt: '念力振り子',
         content: '',
         page: 'pendulum',
