@@ -26,6 +26,20 @@ import { useAtelierStore } from '~/stores/atelierStore'
 import Card from '~/components/card.vue'
 import AtelierNav from '~/components/atelierNav.vue'
 import T from '~/components/T.vue'
+import { useHead } from '#imports'
+
+useHead({
+  title: '東大CAST五月祭2025 | サイエンスアトリエ | 三原色コップ',
+  meta: [
+    { name: 'description', content: 'コップの中で光を混ぜる工作で、「光の三原色」のふしぎを体感しよう！工学部6号館アトリエ会場でお待ちしています！※この企画への参加には整理券が必要です' },
+    { property: 'og:title', content: '東大CAST五月祭2025' },
+    { property: 'og:description', content: '科学面白さを、多くの人に伝えたい。東大CASTが五月祭に出展！' },
+    { property: 'og:image', content: 'https://ut-cast.net/mayfes2025/CAST_logo.png' },
+    { property: 'og:url', content: 'https://ut-cast.net/mayfes2025/' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
 
 const atelierStore = useAtelierStore()
 const filteredCards = computed(() => atelierStore.cards.filter(card => card.page === 'lightcop'))

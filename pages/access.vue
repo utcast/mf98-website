@@ -69,3 +69,20 @@
   aspect-ratio: 16 / 9;
 }
 </style>
+
+<script setup>
+import { useHead } from '#imports'
+
+useHead({
+  title: '東大CAST五月祭2025 | サイエンスミュージアム・ショー・アトリエ',
+  meta: [
+    { name: 'description', content: '東大CASTが第98回五月祭に出展します。サイエンスミュージアム・ショー・アトリエへのアクセスはこちらをが参照ください。' },
+    { property: 'og:title', content: '東大CAST五月祭2025' },
+    { property: 'og:description', content: '科学面白さを、多くの人に伝えたい。東大CASTが五月祭に出展！' },
+    { property: 'og:image', content: 'https://ut-cast.net/mayfes2025/CAST_logo.png' },
+    { property: 'og:url', content: 'https://ut-cast.net/mayfes2025/' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
+</script>

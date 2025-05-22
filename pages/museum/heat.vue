@@ -22,6 +22,20 @@ import { useMuseumStore } from '~/stores/museumStore';
 import Card from '~/components/card.vue';
 import MuseumNav from '~/components/museumNav.vue';
 import T from '~/components/T.vue';
+import { useHead } from '#imports'
+
+useHead({
+  title: '東大CAST五月祭2025 | なるほど実感サイエンスミュージアム | 熱と電気ブース',
+  meta: [
+    { name: 'description', content: '家電製品、電子機器など私たちには不可欠な電気。このブースでは電気の温める/冷やすという側面に注目します。実験の鍵は”ペルチェ素子”という電子部品。 熱と電気の関係とは？ペルチェ素子とは？疑問に思った方は熱と電気ブースまで！' },
+    { property: 'og:title', content: '東大CAST五月祭2025' },
+    { property: 'og:description', content: '科学面白さを、多くの人に伝えたい。東大CASTが五月祭に出展！' },
+    { property: 'og:image', content: 'https://ut-cast.net/mayfes2025/CAST_logo.png' },
+    { property: 'og:url', content: 'https://ut-cast.net/mayfes2025/' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
 
 const museumStore = useMuseumStore();
 const filteredCards = computed(() => museumStore.cards.filter(card => card.page === 'heat'));
