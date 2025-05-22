@@ -53,34 +53,37 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import T from '~/components/T.vue'
 import TitleTriangle from '~/components/TitleTriangle.vue'
 import CardSlider from '~/components/CardSlider.vue'
+import { useHead } from '#imports'
 
-export default {
-  components: {
-    T,
-    TitleTriangle,
-    CardSlider,
-  },
-  data() {
-    return {
-      isVisible: false, // 初期状態は非表示
-    };
-  },
-  methods: {
-    onImageLoad() {
-      // 画像が読み込まれたらフェードインを開始
-      this.isVisible = true;
-    },
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isVisible = true; // ページが開かれた後に表示
-    }, 200); // 遅延時間を200msに調整
-  },
+useHead({
+  title: '東大CAST五月祭2025 | サイエンスミュージアム・ショー・アトリエ',
+  meta: [
+    { name: 'description', content: '東大CASTが第98回五月祭に出展します。科学のおもしろさを、多くの人に伝えたい。企画サイエンスミュージアム、サイエンスショー、サイエンスアトリエの3つの企画を出展いたしますのでぜひお楽しみください。' },
+    { property: 'og:title', content: '東大CAST五月祭2025' },
+    { property: 'og:description', content: '科学面白さを、多くの人に伝えたい。東大CASTが五月祭に出展！' },
+    { property: 'og:image', content: 'https://ut-cast.net/mayfes2025/CAST_logo.png' },
+    { property: 'og:url', content: 'https://ut-cast.net/mayfes2025/' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
+
+const isVisible = ref(false)
+
+function onImageLoad() {
+  // 画像が読み込まれたらフェードインを開始
+  isVisible.value = true
 }
+
+onMounted(() => {
+  setTimeout(() => {
+    isVisible.value = true // ページが開かれた後に表示
+  }, 200) // 遅延時間を200msに調整
+})
 </script>
 
 <style scoped>

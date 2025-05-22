@@ -27,6 +27,20 @@ import { useShowStore } from '~/stores/showStore';
 import Card from '~/components/card.vue';
 import ShowNav from '~/components/showNav.vue';
 import T from '~/components/T.vue';
+import { useHead } from '#imports'
+
+useHead({
+  title: '東大CAST五月祭2025 | なるほど体感サイエンスショー',
+  meta: [
+    { name: 'description', content: '身の回りには、タイヤやコマなど、ぐるぐる回っているものがたくさんあります。このショーでは、回転するものを使った実験を通して、そんな回転の“ひみつ”に迫ります。君も一緒に、回転が生み出すふしぎな力の世界をのぞいてみよう！' },
+    { property: 'og:title', content: '東大CAST五月祭2025' },
+    { property: 'og:description', content: '科学面白さを、多くの人に伝えたい。東大CASTが五月祭に出展！' },
+    { property: 'og:image', content: 'https://ut-cast.net/mayfes2025/CAST_logo.png' },
+    { property: 'og:url', content: 'https://ut-cast.net/mayfes2025/' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
 
 const showStore = useShowStore();
 const filteredCards = computed(() => showStore.cards.filter(card => card.page === 'rotation'));

@@ -12,6 +12,10 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+              {
+        name: 'description',
+        content: '東大CASTが第98回五月祭に出展します。科学のおもしろさを、多くの人に伝えたい。企画サイエンスミュージアム、サイエンスショー、サイエンスアトリエの3つの企画を出展いたしますのでぜひお楽しみください。'
+      },
         { property: 'og:site_name', content: '東大CAST五月祭2025特設サイト' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://ut-cast.net/mayfes2025' },
