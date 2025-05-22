@@ -1,1 +1,0 @@
-import{_ as o}from"./DJ-2Hw5q.js";import{u as r,c as t,a,o as s}from"./B_sOT_5e.js";const u={__name:"index",setup(n){return r().replace({name:"en-kimiS-1_1"}),(i,e)=>(s(),t("div",null,e[0]||(e[0]=[a("img",{src:o,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{u as default};
