@@ -15,7 +15,7 @@
         :key="index"
         class="slide"
       >
-        <NuxtLink :to="card.to" class="card-link" :style="{ backgroundImage: `url(${card.image})` }" />
+        <a :href="`https://ut-cast.net/mayfes2025/en${card.to}`" class="card-link" :style="{ backgroundImage: `url(${card.image})` }" target="_blank" rel="noopener noreferrer" />
       </SwiperSlide>
     </Swiper>
   </div>
