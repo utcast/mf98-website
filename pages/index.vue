@@ -50,6 +50,16 @@
       <TitleTriangle title="[企画紹介](きかくしょうかい)" position="left" />
       <CardSlider />
     </div>
+    <div class="flex flex-col items-center justify-center min-h-screen">
+    <TitleTriangle title="[PDF](ぴーでぃーえふ)ダウンロード" position="left" />
+    <a
+      href="/mayfes2025/panf.pdf"
+      download
+      class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
+    >
+      東大CAST五月祭パンフレットダウンロードはこちらから！
+    </a>
+  </div>
   </div>
 </template>
 
