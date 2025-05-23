@@ -51,7 +51,7 @@
       <CardSlider />
     </div>
     <div class="triangle-container">
-      <TitleTriangle title="[PDF](ぴーでぃーえふ)ダウンロード" position="left" />
+      <TitleTriangle title="[東大](とうだい)[CAST](CAST)[五月祭](ごがつさい)パンフレット" position="left" />
       <div class="iframe-container">
         <a href="/mayfes2025/ut-cast_mayfes2025_pamphlet.pdf" download>
           <img src="@/assets/img/panf.jpg" alt="パンフレット画像" class="responsive-iframe" />
