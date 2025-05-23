@@ -53,17 +53,17 @@
     <div class="triangle-container">
       <TitleTriangle title="[PDF](ぴーでぃーえふ)ダウンロード" position="left" />
       <div class="iframe-container">
-        <a href="/mayfes2025/panf.pdf" download>
+        <a href="/mayfes2025/ut-cast_mayfes2025_pamphlet.pdf" download>
           <img src="@/assets/img/panf.jpg" alt="パンフレット画像" class="responsive-iframe" />
         </a>
       </div>
     </div>
           <a
-        href="/mayfes2025/panf.pdf"
+        href="/mayfes2025/ut-cast_mayfes2025_pamphlet.pdf"
         download
         class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition mt-10"
       >
-        東大CAST五月祭パンフレットダウンロードはこちらから！
+        東大CAST五月祭パンフレット（3.0 MB）ダウンロードはこちらから！
       </a>
 
   </div>

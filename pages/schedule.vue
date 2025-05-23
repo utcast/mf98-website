@@ -2,7 +2,8 @@
   <div class="container mx-auto px-4 py-6">
     <!-- ページタイトル -->
     <h1 class="text-3xl font-bold text-center mb-4">タイムスケジュール</h1>
-
+    <p>アトリエの整理券状況を各回の枠をタップすることで確認できます。<br>
+      ページを更新していない場合、最新の状態でない場合がございます。ページを更新の上ご確認ください。</p>
     <!-- スケジュールテーブル -->
     <ScheduleTable />
 
