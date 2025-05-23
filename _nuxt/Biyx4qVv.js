@@ -1,1 +1,0 @@
-import{_ as o}from"./sCJ-hwcq.js";import{u as t,c as r,a,o as s}from"./Bxcarjci.js";const m={__name:"index",setup(n){return t().replace({name:"en-show-rotation"}),(l,e)=>(s(),r("div",null,e[0]||(e[0]=[a("img",{src:o,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{m as default};
