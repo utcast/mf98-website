@@ -35,14 +35,21 @@
 
       <div 
         v-if="schedule.channel === 'atelier'" 
-        class="text-sm font-bold text-center" 
-        :class="{
-          'line-through text-gray-500': schedule.ticketStatus.reserved === 0,
-          'text-red-500': schedule.ticketStatus.reserved >= 1 && schedule.ticketStatus.reserved <= 5,
-          'text-gray-800': schedule.ticketStatus.reserved > 5
-        }"
+        class="text-sm font-bold text-center"
       >
-        <T :v="`整理券残り: ${schedule.ticketStatus.reserved}/${schedule.ticketStatus.limit}枚`" />
+        <div v-if="schedule.ticketStatus.limit === 0" class="text-gray-500">
+          loading...
+        </div>
+        <div 
+          v-else 
+          :class="{
+            'line-through text-gray-500': schedule.ticketStatus.reserved === 0,
+            'text-red-500': schedule.ticketStatus.reserved >= 1 && schedule.ticketStatus.reserved <= 5,
+            'text-gray-800': schedule.ticketStatus.reserved > 5
+          }"
+        >
+          <T :v="`[整理券残](せいりけんのこ)り: ${schedule.ticketStatus.reserved}/${schedule.ticketStatus.limit}枚`" />
+        </div>
       </div>
     </div>
   </div>
