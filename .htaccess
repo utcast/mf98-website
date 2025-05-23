@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /
+  RewriteBase /mayfes2025/
 
   # ファイル・ディレクトリが存在しない場合は index.html にリダイレクト
   RewriteCond %{REQUEST_FILENAME} !-f
