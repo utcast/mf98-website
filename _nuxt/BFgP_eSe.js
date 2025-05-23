@@ -1,0 +1,1 @@
+import{_ as o}from"./lXBAO6hV.js";import{u as r,c as t,a,o as s}from"./DHq9e_XP.js";const m={__name:"index",setup(n){return r().replace({name:"atelier-box"}),(l,e)=>(s(),t("div",null,e[0]||(e[0]=[a("img",{src:o,alt:"Loading....",class:"object-contain h-11"},null,-1)])))}};export{m as default};
