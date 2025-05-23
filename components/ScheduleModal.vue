@@ -38,7 +38,7 @@
         class="text-sm font-bold text-center"
       >
         <div v-if="schedule.ticketStatus.limit === 0" class="text-gray-500">
-          loading...
+          一度×をおし、開き直してください。
         </div>
         <div 
           v-else 

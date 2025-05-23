@@ -50,17 +50,24 @@
       <TitleTriangle title="[企画紹介](きかくしょうかい)" position="left" />
       <CardSlider />
     </div>
-    <div class="flex flex-col items-center justify-center min-h-screen">
-    <TitleTriangle title="[PDF](ぴーでぃーえふ)ダウンロード" position="left" />
-    <a
-      href="/mayfes2025/panf.pdf"
-      download
-      class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition"
-    >
-      東大CAST五月祭パンフレットダウンロードはこちらから！
-    </a>
+    <div class="triangle-container">
+      <TitleTriangle title="[PDF](ぴーでぃーえふ)ダウンロード" position="left" />
+      <div class="iframe-container">
+        <a href="/mayfes2025/panf.pdf" download>
+          <img src="@/assets/img/panf.jpg" alt="パンフレット画像" class="responsive-iframe" />
+        </a>
+      </div>
+    </div>
+          <a
+        href="/mayfes2025/panf.pdf"
+        download
+        class="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition mt-10"
+      >
+        東大CAST五月祭パンフレットダウンロードはこちらから！
+      </a>
+
   </div>
-  </div>
+      <div class="empty-box"></div>
 </template>
 
 <script setup>
@@ -98,4 +105,22 @@ onMounted(() => {
 
 <style scoped>
 /* Tailwind CSSのユーティリティクラスを使用するため、スタイル設定は不要です */
+.triangle-container {
+position: relative;
+width: 100%;
+aspect-ratio: 16/9; /* 縦横比固定 /
+margin-top: 50px; / 上部余白 */
+}
+.iframe-container {
+  position: absolute;
+  top: 70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 90vw; /* 幅の最大値 */
+}
+.empty-box {
+    height: 40px;
+    width: 100%;
+  }
 </style>
