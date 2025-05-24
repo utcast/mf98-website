@@ -18,6 +18,21 @@
         </div>
       </div>
     </ShowNav>
+      <div class="triangle-container-right">
+      <TitleTriangle title="ショー[動画](どうが)" position="right" />
+      <div class="iframe-container">
+        <iframe
+          class="responsive-iframe"
+          src="https://www.youtube.com/embed/bVsB-ZkA3YA?si=WvZnPz_EYo7wY069"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class = "empty-box"></div>
   </div>
 </template>
 
@@ -51,4 +66,39 @@ const filteredCards = computed(() => showStore.cards.filter(card => card.page ==
   display: flex;
   gap: 10px;
 }
+.triangle-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;/*縦横比を固定*/
+  margin-top: 50px; /* 重なりのための余白 */
+}
+
+.triangle-container-right {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;/*右に揃える*/ 
+  aspect-ratio: 16/9;
+  margin-top: 50px; /* 重なりのための余白 */
+}
+
+/* iframe を適切な位置に配置 */
+.iframe-container {
+  position: absolute;
+  top: 70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 90vw; /* 画面幅に応じた最大幅 */
+}
+
+/* 動画のアスペクト比を維持 */
+.responsive-iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.empty-box {
+    height: 40px;
+    width: 100%;
+  }
 </style>
