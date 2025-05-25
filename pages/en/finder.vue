@@ -4,7 +4,7 @@
     <img src="@/assets/img/confetti-25.gif" alt="Confetti">
   </div>
   <h2 class="bg-white text-center">
-    <T :v="`Congratulations on clearing level 2! What you just filled in is ...`" />
+    <T :v="`Congratulations on clearing level 1! What you just filled in is ...`" />
   </h2>
   <div>
     <!-- triangle container -->
