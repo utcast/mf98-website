@@ -11,6 +11,12 @@
         <img src="@/assets/img/atelier_logo.png" alt="Atelier Logo" class="h-16">
       </NuxtLink>
     </div>
+
+    <!-- 五月祭は終了しましたのメッセージ -->
+    <div class="text-center text-gray-600 text-lg my-4 bg-white rounded">
+      <T v = "The May Festival has ended. Thank you for visiting!"></T>
+    </div>
+
     <div class="flex flex-col md:flex-row items-center md:space-x-4">
       <div
         v-if="isVisible"
@@ -45,7 +51,7 @@
     </div>
     <div class="w-full flex justify-start">
       <TitleTriangle title="Contents" position="left" />
-      <CardSlider />
+      <enCardSlider />
     </div>
         <div class="triangle-container">
       <TitleTriangle title="UT-CAST MayFes Pamphlet" position="left" />
@@ -70,13 +76,13 @@
 <script>
 import T from '~/components/en/T.vue'
 import TitleTriangle from '~/components/en/TitleTriangle.vue'
-import CardSlider from '~/components/en/CardSlider.vue'
+import enCardSlider from '~/components/enCardSlider.vue'
 
 export default {
   components: {
     T,
     TitleTriangle,
-    CardSlider,
+    enCardSlider,
   },
   data() {
     return {

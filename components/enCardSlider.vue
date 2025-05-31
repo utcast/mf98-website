@@ -15,13 +15,14 @@
         :key="index"
         class="slide"
       >
-        <a :href="`https://ut-cast.net/mayfes2025/en${card.to}`" class="card-link" :style="{ backgroundImage: `url(${card.image})` }" target="_blank" rel="noopener noreferrer" />
+        <NuxtLink :to="`/mayfes2025/en${card.to}`" class="card-link" :style="{ backgroundImage: `url(${card.image})` }" />
       </SwiperSlide>
     </Swiper>
   </div>
 </template>
 
 <script setup>
+
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Autoplay } from 'swiper/modules'
 import 'swiper/css'
@@ -38,13 +39,13 @@ import rotationImg from '@/assets/img/rotation_logo.png'
 
 // カードデータ
 const cards = [
-  { to: '/museum/pen', image: penImg },
-  { to: '/museum/clothes', image: clothesImg },
-  { to: '/museum/heat', image: heatImg },
-  { to: '/atelier/box', image: boxImg },
-  { to: '/atelier/lightcop', image: sangenImg },
-  { to: '/atelier/pendulum', image: hurikoImg },
-  { to: '/show/rotation', image: rotationImg },
+  { to: 'museum/pen', image: penImg },
+  { to: 'museum/clothes', image: clothesImg },
+  { to: 'museum/heat', image: heatImg },
+  { to: 'atelier/box', image: boxImg },
+  { to: 'atelier/lightcop', image: sangenImg },
+  { to: 'atelier/pendulum', image: hurikoImg },
+  { to: 'show/rotation', image: rotationImg },
 ]
 </script>
 

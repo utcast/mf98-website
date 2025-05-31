@@ -11,6 +11,10 @@
         <img src="@/assets/img/atelier_logo.png" alt="アトリエロゴ" class="h-16">
       </NuxtLink>
     </div>
+    <!-- 五月祭は終了しましたのメッセージ -->
+    <div class="text-center text-gray-600 text-lg my-4 bg-white rounded">
+      <T v = "[五月祭](ごがつさい)は[終了](しゅうりょう)しました。ご[来場](らいじょう)ありがとうございました！"></T>
+    </div>
     <div class="flex flex-col md:flex-row items-center md:space-x-4">
       <div
         v-if="isVisible"
